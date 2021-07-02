@@ -14,8 +14,11 @@ body{
 .navbar{
     padding: 15px;
 }
+.logi{
+    width:8.5em ;
+}
 .logo{
-
+    padding-top: 5px;
 }
 
 nav{
@@ -135,3 +138,80 @@ ul{
 .Kontakt{
     color: #F8F8F8;
 }
+
+.rightSideImg{
+    display: none;
+}
+
+.sixth{ 
+   background: #181717;
+   height: 900px;
+   margin-top: 50px;
+}
+
+.container6{
+    margin: 0 auto;
+    text-align: center;
+}
+.ulFooter{
+    display: inline;
+}
+.ulFooter1{
+    display: inline;
+}
+.row1{
+    padding-top: 80px;
+}
+.row4{
+    padding-top: 50px;
+}
+.row2{
+    padding-top: 45px;
+}
+.row3{
+    padding-top: 50px;
+}
+.pFooter1{
+    width: 70px;
+}
+.row5{
+    padding-top: 145px;
+    
+}
+.pFooter{
+    display: none;
+    
+}
+.twobuttons{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    
+}
+.container10{
+    display: flex;
+    background: var(--primary-color);
+    height: 80px;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    place-content: space-between;
+    
+}
+.kontakt14{
+    color: white;
+}   
+.kontakt15{
+   width: 37px;
+}
+.kontakt10{
+    padding-left: 20%;
+    text-align: center;
+}
+.projekti10{
+    padding-right: 22%;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
