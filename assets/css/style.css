@@ -7,7 +7,7 @@
 }
 
 body{
-    background: #f2f2f2;
+    background: #fafafa;
     margin: 0;
     padding: 0;
     font-family: "Poppins";
@@ -15,9 +15,16 @@ body{
 .main{
     color: #f2f2f2;
 }
+.leftSide{
+    -top: 80%;
+}
+.logoFooter{
+    width: 150px;
+}
 .subhead{
     color: #c2c2c2;
     max-width: 85%;
+    display: ;
 }
 .navbar{
     padding: 15px;
@@ -35,7 +42,7 @@ nav{
     width: 100%;
     right: 0;
     top: 0;
-    background: #524f4f;
+    background: #cacaca;
     height: 100vh;
     display: none;
 }
@@ -93,10 +100,13 @@ section{
     padding: 15px;
 }
 
-.leftSide{
-    padding-top: 80%;
+.container2{
+    position: relative ;
+    top: 50%;
 }
-
+.first{
+    height: 90vh;
+}
 .hero-cta{
     display: none;
 }
@@ -155,6 +165,9 @@ ul{
 }
 .aba{
     padding-right: 15px;
+}
+.aba2{
+    color: var(--primary-color1);
 }
 
 .cardcard{
@@ -330,6 +343,9 @@ a{
 .brojFooter{
     color: var(--primary-color);
 }
+.navnav{
+    color: black;
+}
 .pFooter1{
     font-weight: 400;   
 }
@@ -361,5 +377,21 @@ nav.menu-btn{
     background: white;
 }
 @media only screen and (min-width: 768px) {
+   
+    .subhead{
+        max-width: 600px;
+    }
+    .twobuttons{
+        display: none;
+    }
+    .logi{
+        width: 200px;
+    }
+    .par2{
+        
+    }
+    .second{
+        text-align: center;
+    }
     
 }
