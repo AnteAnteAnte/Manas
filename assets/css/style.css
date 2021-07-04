@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 :root{
-    --primary-color:#B23838;
+    --primary-color1:#B23838;
+    --primary-color2:#676767;
 }
 
 body{
@@ -11,7 +12,13 @@ body{
     padding: 0;
     font-family: "Poppins";
 }
-
+.main{
+    color: #f2f2f2;
+}
+.subhead{
+    color: #c2c2c2;
+    max-width: 85%;
+}
 .navbar{
     padding: 15px;
 }
@@ -23,9 +30,56 @@ body{
 }
 
 nav{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background: #524f4f;
+    height: 100vh;
     display: none;
 }
+.pet{
+    font-weight: 400;
+}
+.pet:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+.mobileMenuExit{
+    padding: 20px;
+    float: right;
+    cursor: pointer;
+}
+.navigation{
+  text-align: center;
+  display: inline; 
+}
+.navigation2{
+    text-align: center;
+    display: inline; 
+}
+.navigation3{
+    text-align: center;
+    display: inline; 
+}
+li{
+    padding: 0.5em;
+}
+li:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
 
+.containerNav2{
+    padding-top: 70px;
+}
+.containerNav3{
+    padding-top: 50px;
+}
+.containerNav{
+    padding-top: 60px;
+}
 .container1{
     display: flex;
     place-content: space-between;
@@ -40,7 +94,7 @@ section{
 }
 
 .leftSide{
-    padding-top: 350px;
+    padding-top: 80%;
 }
 
 .hero-cta{
@@ -57,11 +111,13 @@ section{
 
 .par2{
     padding-top: 70px;
+    color: var(--primary-color2);
+    max-width: 95%;
 }
 
 .leftSide1{
     text-align: center;
-    padding-bottom: ;
+
 }
 .container3{
     margin: 0;
@@ -76,6 +132,7 @@ section{
 .par3{
     padding-right: 13px;
     font-weight: 600;
+    color: var(--primary-color1);
 }
 
 a{
@@ -93,7 +150,9 @@ ul{
 .cardSideBySide{
    display: flex;
 }
-
+.cardText{
+    color: var(--primary-color2);
+}
 .aba{
     padding-right: 15px;
 }
@@ -114,7 +173,7 @@ ul{
 }
 .container4{
     width: 100%;
-    height: auto;
+    height: auto ;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -122,11 +181,11 @@ ul{
 }
 
 .leftSide5{
-    background: var(--primary-color);
+    background: var(--primary-color1);
     max-width: 370px;
     width: auto;
     margin: auto;
-    height: 620px;
+    height: 600px;
     margin-top: 150px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -185,6 +244,7 @@ a{
 }
 .row2{
     padding-top: 45px;
+    font-weight: 400;
 }
 .row3{
     padding-top: 50px;
@@ -203,19 +263,18 @@ a{
 .twobuttons{
     margin: 0;
     padding: 0;
-    background: var(--primary-color);
+    background: var(--primary-color1);
     
 }
 .container10{
     display: flex;
-    background: var(--primary-color);
-    height: 80px;
-    padding-top: 20px;
+    background: var(--primary-color1);
+    height: 9%;
+    padding-top: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    place-content: space-between;
-    
+    justify-content: space-between;
 }
 .kontakt14{
     color: white;
@@ -224,13 +283,13 @@ a{
    width: 37px;
 }
 .kontakt10{
+    text-align: center;
     padding-left: 20%;
-    text-align: center;
+    padding-bottom: 20%;
 }
-.projekti10{
-    padding-right: 22%;
-    text-align: center;
-    padding-bottom: 10%;
+.projekti10{   
+    text-align: center; 
+    padding-right: 22%;  
 }
 
 header{
@@ -248,10 +307,7 @@ header{
     margin: 0;
     padding: 0;
 }
-.fourth{
-    height: 100vh;
-    padding-bottom: 70px;
-}
+
 .contactUsH2{
     color: #FFFFFF;
     font-weight: 600;
@@ -280,4 +336,30 @@ a{
 .aiv{
     color: var(--primary-color);
     font-weight: 600;
+}
+.footer-col{
+    display: none;
+}
+nav.menu-btn{
+    display: block;
+}
+.footertekstp{
+    color: var(--primary-color1);
+    font-weight: 600;
+}
+.mailFooter{
+    color: var(--primary-color1);
+    font-weight: 600;
+}
+.brojFooter{
+    color: var(--primary-color1);
+    font-weight: 600;
+}
+.rowrow{
+    width: 20px;
+    height: 5px;
+    background: white;
+}
+@media only screen and (min-width: 768px) {
+    
 }
