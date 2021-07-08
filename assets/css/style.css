@@ -159,6 +159,7 @@ a{
 
 .h2Text{
     display: none;
+    
 }
 
 ul{
@@ -442,6 +443,12 @@ nav.menu-btn{
     }
     .fourth{
         padding-top: 250px;
+    }
+    .cardcard{
+        max-width: 750px;
+    }
+    .container4{
+        justify-content: center;
     }
     .leftSide5{
         float: left;
