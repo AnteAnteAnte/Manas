@@ -269,12 +269,14 @@ section {
 
 .tekst2 {
   display: none;
+  font-size: 16px;
 }
 
 .par2 {
   padding-top: 70px;
   color: var(--primary-color2);
   max-width: 95%;
+  font-size: 16px;
 }
 
 .leftSide1 {
@@ -313,6 +315,7 @@ ul {
 }
 .cardText {
   color: var(--primary-color2);
+  font-size: 16px;
 }
 .aba {
   padding-right: 15px;
@@ -380,8 +383,10 @@ ul {
   margin: 0 auto;
   text-align: center;
 }
+
 .ulFooter {
   display: inline;
+  text-decoration: none;
 }
 a {
   text-decoration: none;
@@ -488,7 +493,7 @@ a {
   color: var(--primary-color);
 }
 .brojFooter {
-  color: var(--primary-color);
+  color: white;
 }
 .navnav {
   color: black;
@@ -508,16 +513,16 @@ nav.menu-btn {
   display: block;
 }
 .footertekstp {
-  color: var(--primary-color1);
-  font-weight: 600;
+  color: white;
+  font-weight: 200;
 }
 .mailFooter {
   color: var(--primary-color1);
   font-weight: 600;
 }
 .brojFooter {
-  color: var(--primary-color1);
-  font-weight: 600;
+  color: white;
+  font-weight: 200;
 }
 .rowrow {
   width: 20px;
@@ -525,7 +530,7 @@ nav.menu-btn {
   background: white;
 }
 .slider--content {
-  margin: 0 60px 0 50px;
+  margin: 0 60px 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -573,13 +578,13 @@ nav.menu-btn {
 
 .slider--heading {
   color: var(--primary-color1);
-  font-size: 4rem;
+  font-size: 45px;
   font-weight: 700;
 }
 
 .slider--heading-four {
   color: var(--text);
-  font-size: 2.25rem;
+  font-size: 30px;
   width: 60%;
   font-weight: 500;
 }
@@ -597,6 +602,7 @@ nav.menu-btn {
 }
 
 @media only screen and (min-width: 768px) {
+  
   .subhead {
     width: 65%;
   }
@@ -608,6 +614,7 @@ nav.menu-btn {
   }
   .par2 {
     max-width: 640px;
+    font-size: 16px;
   }
   .leftSide1 {
     text-align: left;
@@ -650,7 +657,39 @@ nav.menu-btn {
     -webkit-box-shadow: 5px 6px 8px 3px rgba(0, 0, 0, 0.74);
     box-shadow: 5px 6px 8px 3px rgba(0, 0, 0, 0.74);
   }
-}
+  .container6{
+    display: flex;
+    justify-content: space-evenly ;
+    padding-right: 10%;
+  }
+  .sixth{
+    height: 40vh;
+  }
+  .test{
+    display: none;
+  }
+  .row5{
+    display: none;
+  }
+  .row11{
+    max-width: 200px;
+    padding-top: 120px;
+    text-align: center;
+  }
+  .row4{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .row1{
+    text-align: center;
+  }
+  .row3{
+    float: left;
+  }
+  .container6 {
+    text-align: unset;
+  
+  }
 .sixth {
   margin-top: 900px;
 }
@@ -663,13 +702,13 @@ nav.menu-btn {
 .container4 {
   display: flex;
 }
-
+}
 @media only screen and (min-width: 1000px) {
   .tekst2 {
-    font-size: 3rem;
+    font-size: 30px;
   }
   .par2 {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 }
 
