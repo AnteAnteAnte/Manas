@@ -306,14 +306,25 @@ section {
   transform: scale(1.05);
   color: var(--primary-color1);
 }
-
+.position4{
+  padding-left: 360px;
+}
 .par3 {
   padding-right: 13px;
   font-weight: 600;
   color: black;
+  transition: 0.3s;
+}
+.par3:hover{
+  transform: scale(1.05);
+  color: var(--primary-color1);
 }
 
-
+.position3{
+  padding-top: 100px;
+  padding-left: 66px;
+  padding-bottom: 100px;
+}
 a {
   color: var(--primary-color);
 }
