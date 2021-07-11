@@ -1,14 +1,7 @@
-$(document).ready(function(){
-	$('#nav-icon2').click(function(){
-		$(this).toggleClass('open');
-	});
-}); 
-
-/* const hamIcon = document.querySelector("#nav-icon2");
-
-hamIcon.addEventListener("click", () => {
-  this.classList.toggle("open")
-}) */
+function animateIcon() {
+  const hamIcon = document.querySelector("#nav-icon2");
+  hamIcon.classList.toggle("open")
+}
 
 const hamburger = document.querySelector(".hamburger");
 const overlay = document.querySelector(".overlay");
@@ -119,3 +112,4 @@ function scrollToTop() {
   })
 }
 scrollToTopBtn.addEventListener("click", scrollToTop)
+
