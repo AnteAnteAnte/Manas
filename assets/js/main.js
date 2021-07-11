@@ -102,8 +102,19 @@ sliderBtnLeft.addEventListener("click", () => {
 startSlider();
 
 
-var scrollToTopBtn = document.getElementById("scrollToTopBtn")
-var rootElement = document.documentElement
+let scrollToTopBtn = document.getElementById("scrollToTopBtn")
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+window.onscroll = function() {scrollFunction()};
+
+let rootElement = document.documentElement
 
 function scrollToTop() {
   rootElement.scrollTo({
@@ -111,5 +122,6 @@ function scrollToTop() {
     behavior: "smooth"
   })
 }
-scrollToTopBtn.addEventListener("click", scrollToTop)
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
 

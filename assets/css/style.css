@@ -657,7 +657,7 @@ nav.menu-btn {
 }
 
 section.third {
-  height: 80vh;
+  margin-top: 100px;
 }
 
 .carousel-slider--all {
@@ -1012,7 +1012,7 @@ section.third {
 .container4 {
   display: flex;
 }
-<<<<<<< Updated upstream
+
 footer {
   display: flex;
   position: fixed;
@@ -1021,29 +1021,27 @@ footer {
   left: 90%;
   bottom: 10px;
 }
+
 #scrollToTopBtn {
-  background-color: black;
+  display: none;
+  background-color: var(--primary-color1);
   border: none;
   border-radius: 15%;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 26px;
   height: 62px;
   width: 62px;
   transition: 0.3s;
-  
-  
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
 }
+
 #scrollToTopBtn:hover{
   transform: scale(1.05);
 }
-.arrowGo{
-  background: white;
-}
-
-
-
-=======
 
 
 /* U izgradnji Kman */
@@ -1089,6 +1087,6 @@ footer {
   width: 70%;
   position: relative;
 }
->>>>>>> Stashed changes
+
 
 
