@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 :root {
   --primary-color1: #b23838;
   --text: #4f4f4f;
@@ -689,11 +690,84 @@ section.third {
   width: 50%;
 }
 
-.card {
-  height: 300px;
-  width: 100px;
+.all-card--content {
+  display: flex;
+  font-family: 'Russo One', sans-serif;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 405px;
+  background-color: rgba(0,0,0, .4);
   border-radius: 10px;
-  background-color: var(--primary-color1);
+}
+
+.close-projects {
+  padding-top: 20px;
+}
+
+.first-para {
+  font-size: 12px;
+  color: #161616;
+}
+
+.second-para {
+  font-size: 18px;
+  color: #161616;
+}
+
+.third-para {
+  font-size: 36px;
+  color: var(--primary-color1);
+}
+
+.stats p {
+  color: #fff;
+}
+
+.close-projects p, .stats p {
+  margin: 0;
+}
+
+.stats {
+  padding-bottom: 40px;
+  visibility: hidden;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.card:hover .stats {
+  visibility: visible;
+  opacity: 1;
+}
+
+.brda {
+  background: url("../images/brda.svg");
+}
+
+.kila {
+  background: url("../images/kila.svg");
+}
+
+.pazdigrad {
+  background: url("../images/pazdigrad.svg");
+}
+
+.znjan {
+  background: url("../images/znjan.png");
+}
+
+.solin {
+  background: url("../images/solin.png");
+}
+
+.card {
+  height: 405px;
+  width: 284px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
   margin: 20px;
 }
 
