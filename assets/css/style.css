@@ -707,7 +707,16 @@ section.third {
   border-radius: 10px;
   margin-right: -24px;
 }
-
+.position9{
+  padding-left: 180px;
+}
+.deset2{
+  transition: 0.3s;
+  cursor: pointer;
+}
+.deset2:hover{
+  transform: scale(1.25);
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -899,7 +908,7 @@ section.third {
     padding-right: 10%;
   }
   .sixth{
-    height: 40vh;
+    height: 42vh;
   }
   .test{
     display: none;
@@ -1090,3 +1099,107 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projekti1{
+  height: 80vh;
+  margin-top: 125px;
+}
+div[class*=box] {
+  height: 33.33%;
+  width: 100%; 
+  display: inline-block;
+ 
+}
+.rightsideprojekti{
+  display: flex;
+}
+.trireda{
+  padding-right: 50px;
+}
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+.btn-one {
+  color: #b23838;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: #b23838;
+  border-bottom-color: #b23838;
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+.containerProjekti{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 50px;
+}
+.zgrada{
+
+}
+.zgrada1{
+  width: 350px;
+  transition: 0.3s;
+}
+.zgrada1:hover{
+  transform: scale(1.25);
+}
+.position16{
+  margin-left: 6%;
+}
