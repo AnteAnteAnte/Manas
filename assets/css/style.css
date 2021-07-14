@@ -6,7 +6,14 @@
   --primary-color1: #b23838;
   --text: #4f4f4f;
 }
-
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body {
   background: #fafafa;
   margin: 0;
@@ -194,8 +201,7 @@ body {
 .navbar {
   padding: 15px;
 }
-.logi {
-  width: 8.5em;
+
 }
 .logo {
   padding-top: 5px;
@@ -204,8 +210,9 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px 0 50px;
+  margin: 0px 10px 0px 10px;
   align-items: center;
+  height: 60px;
 }
 
 .pet {
@@ -295,6 +302,9 @@ section {
 .leftSide1 {
   text-align: center;
 }
+.rightSide1{
+  display: none;
+}
 .container3 {
   margin: 0;
   padding: 0;
@@ -304,6 +314,7 @@ section {
   place-content: center;
   padding: 15px;
   transition: 0.3s;
+  text-align: center;
 }
 .sideByside:hover {
   transform: scale(1.05);
@@ -340,17 +351,18 @@ a {
   width: 110px;
   height: 5px;
 }
-.position {
-  padding-left: 190px;
+.containerText{
+  padding-left: ;
 }
-.position2 {
-  padding-bottom: 100px;
-  padding-left: 15px;
+h1{
+  display: none;
 }
 ul {
   list-style-type: none;
 }
-
+.par2{
+  text-align: center;
+}
 .cardSideBySide {
   display: flex;
 }
@@ -401,7 +413,7 @@ ul {
 .leftSide5 {
   background: var(--primary-color1);
   max-width: 370px;
-  min-width: 370px;
+  min-width: 270px;
   width: auto;
   height: 600px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -434,7 +446,7 @@ ul {
 
 .sixth {
   background: #181717;
-  height: 1000px;
+  height: 1050px;
   margin-top: 50px;
 }
 
@@ -597,7 +609,7 @@ nav.menu-btn {
   background: white;
 }
 .slider--content {
-  margin: 0 60px 0 80px;
+  margin: 0 0px 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -655,7 +667,9 @@ nav.menu-btn {
   width: 60%;
   font-weight: 500;
 }
-
+.slider--heading-four{
+  display: none;
+}
 section.third {
   margin-top: 100px;
 }
@@ -671,7 +685,9 @@ section.third {
 
 .buttons {
   float: right;
+  display: none;
 }
+
 
 .prev-button,
 .next-button {
@@ -720,6 +736,12 @@ section.third {
 .third-para {
   font-size: 36px;
   color: var(--primary-color1);
+}
+.position3{
+  display: none;
+}
+.fifth{
+  margin-top: 50px;
 }
 
 .stats p {
@@ -876,7 +898,36 @@ section.third {
   }
 }
 
-@media only screen and (max-width: 1342px) {
+@media only screen and (min-width: 1100px){
+  .rightSide1{
+    display: unset;
+  }
+  .ajajaj{
+    width: 300px;
+  }
+  .container3{
+    display: flex;
+    justify-content: space-between ;
+  }
+  .par2{
+    margin: unset;
+    text-align: left;    
+  }
+  .leftSide1{
+    margin-left: 5%;
+  }
+  .rightSide1{
+    margin-right: 5%;
+  }
+  .containerText{
+    float: left;
+  }
+}
+@media only screen and (max-width: 1034px) {
+  .button123 {
+    display: none;
+  }
+  
   .rightSide5 {
     display: none;
   }
@@ -888,21 +939,50 @@ section.third {
     box-shadow: 5px 6px 8px 3px rgba(0, 0, 0, 0.74);
   }
 }
-@media only screen and (max-width: 1034px) {
-  .button123 {
-    display: none;
-  }
+.par2{
+  margin: auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 696px) {
+  .logi{
+    min-width: 200px;
+  }
+  .par2{
+    margin: auto;
+  }
+  .position9{
+    padding-left: 400px;
+  }
+  .position{
+    padding-left: 355px;
+  }
+  .buttons{
+    display: unset;
+  }
+  .slider--content {
+    margin: 0 20px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80vh;
+  }
+  .slider--feature button{
+    padding: 20px 70px;
+  }
+  nav{
+    margin: 0px 30px 0px 30px;
+    height: auto;
+  }
+  .hamburger{
+    padding-bottom: 22px;
+  }
   .subhead {
     width: 65%;
   }
-
   .container123 {
     float: right;
     position: relative;
     right: 50px;
-    top: 15px;
+    bottom: 90px;
   }
   .container123 .card123 {
     position: relative;
@@ -1001,17 +1081,12 @@ section.third {
   .twobuttons {
     display: none;
   }
-  .logi {
-    width: 200px;
-  }
   .par2 {
     max-width: 640px;
     font-size: 16px;
   }
   .leftSide1 {
-    text-align: left;
     padding-top: 100px;
-    padding-left: 50px;
   }
   .second {
     text-align: center;
@@ -1023,18 +1098,9 @@ section.third {
     place-content: unset;
     padding: unset;
   }
-  .container3 {
-    display: flex;
-    justify-content: space-between;
-  }
-  .rightSide1 {
-    padding-right: 30%;
-    padding-top: 130px;
-  }
-  .ajajaj {
-    width: 200%;
-    height: auto;
-  }
+  
+  
+  
   .h2Text {
     display: unset;
   }
@@ -1092,12 +1158,22 @@ section.third {
     display: flex;
   }
 }
+.position10{
+  text-align: center;
+}
+.tekst2 {
+  font-size: 22px;
+}
+.par2 {
+  font-size: 16px;
+}
+
 @media only screen and (min-width: 1000px) {
   .tekst2 {
     font-size: 30px;
   }
   .par2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -1108,15 +1184,13 @@ section.third {
   display: none;
 }
 .logi {
-  width: 200px;
+  width: 130px;
 }
 .par2 {
   max-width: 440px;
 }
 .leftSide1 {
-  text-align: left;
   padding-top: 100px;
-  padding-left: 50px;
 }
 .second {
   text-align: center;
@@ -1127,24 +1201,19 @@ section.third {
 .sideByside {
   place-content: unset;
   padding: unset;
+  display: none;
 }
-.container3 {
-  display: flex;
-  justify-content: space-between;
-}
-.rightSide1 {
-  padding-right: 30%;
-  padding-top: 130px;
-}
-.ajajaj {
-  width: 200%;
-  height: auto;
-}
+
+
+
 .h2Text {
   display: unset;
 }
 .fourth {
-  padding-top: 250px;
+  padding-top: 90px;
+}
+.test2{
+  width: 90px;
 }
 .cardcard {
   max-width: 750px;
@@ -1153,7 +1222,7 @@ section.third {
   justify-content: center;
 }
 .sixth {
-  margin-top: 200px;
+  margin-top: 80px;
 }
 .container1 {
   padding-left: 50px;
@@ -1161,10 +1230,19 @@ section.third {
 .mobileMenu {
   padding-right: 30px;
 }
-.container4 {
-  display: flex;
+.h2Text{
+  font-size: 22px;
 }
-
+.position2{
+  text-align: center;
+}
+.position999{
+  padding-left: 190px;
+}
+.containerText{
+  max-width: 300px;
+  margin: auto;
+}
 footer {
   display: flex;
   position: fixed;
