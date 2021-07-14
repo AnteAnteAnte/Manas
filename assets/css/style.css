@@ -6,16 +6,15 @@
   --primary-color1: #b23838;
   --text: #4f4f4f;
 }
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 body {
-  background: #fafafa;
   margin: 0;
   padding: 0;
   font-family: "Poppins";
@@ -202,7 +201,6 @@ body {
   padding: 15px;
 }
 
-}
 .logo {
   padding-top: 5px;
 }
@@ -302,7 +300,7 @@ section {
 .leftSide1 {
   text-align: center;
 }
-.rightSide1{
+.rightSide1 {
   display: none;
 }
 .container3 {
@@ -351,16 +349,14 @@ a {
   width: 110px;
   height: 5px;
 }
-.containerText{
-  padding-left: ;
-}
-h1{
+
+h1 {
   display: none;
 }
 ul {
   list-style-type: none;
 }
-.par2{
+.par2 {
   text-align: center;
 }
 .cardSideBySide {
@@ -656,6 +652,7 @@ nav.menu-btn {
 }
 
 .slider--heading {
+  display: block;
   color: var(--primary-color1);
   font-size: 45px;
   font-weight: 700;
@@ -667,9 +664,7 @@ nav.menu-btn {
   width: 60%;
   font-weight: 500;
 }
-.slider--heading-four{
-  display: none;
-}
+
 section.third {
   margin-top: 100px;
 }
@@ -684,10 +679,9 @@ section.third {
 }
 
 .buttons {
+  display: block;
   float: right;
-  display: none;
 }
-
 
 .prev-button,
 .next-button {
@@ -737,10 +731,10 @@ section.third {
   font-size: 36px;
   color: var(--primary-color1);
 }
-.position3{
+.position3 {
   display: none;
 }
-.fifth{
+.fifth {
   margin-top: 50px;
 }
 
@@ -898,28 +892,28 @@ section.third {
   }
 }
 
-@media only screen and (min-width: 1100px){
-  .rightSide1{
+@media only screen and (min-width: 1100px) {
+  .rightSide1 {
     display: unset;
   }
-  .ajajaj{
+  .ajajaj {
     width: 300px;
   }
-  .container3{
+  .container3 {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
   }
-  .par2{
+  .par2 {
     margin: unset;
-    text-align: left;    
+    text-align: left;
   }
-  .leftSide1{
+  .leftSide1 {
     margin-left: 5%;
   }
-  .rightSide1{
+  .rightSide1 {
     margin-right: 5%;
   }
-  .containerText{
+  .containerText {
     float: left;
   }
 }
@@ -927,7 +921,7 @@ section.third {
   .button123 {
     display: none;
   }
-  
+
   .rightSide5 {
     display: none;
   }
@@ -939,23 +933,57 @@ section.third {
     box-shadow: 5px 6px 8px 3px rgba(0, 0, 0, 0.74);
   }
 }
-.par2{
+.par2 {
   margin: auto;
 }
+@media only screen and (max-width: 696px) {
+  .carousel-slider {
+    width: min-content;
+  }
+  .tns-outer {
+    width: 1000px;
+  }
+  .buttons {
+    float: none;
+    display: flex;
+  }
+  .slider--heading {
+    font-size: 35px;
+  }
+  .slider--heading-four {
+    font-size: 20px;
+  }
+  .slider--feature button {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+  .slider--btn-left img,
+  .slider--btn-right img {
+    width: 40px;
+  }
+  .slider--btn-left img:hover,
+  .slider--btn-right img:hover {
+    background-color: none;
+  }
+  .links li a {
+    font-size: 16px;
+  }
+}
+
 @media only screen and (min-width: 696px) {
-  .logi{
+  .logi {
     min-width: 200px;
   }
-  .par2{
+  .par2 {
     margin: auto;
   }
-  .position9{
+  .position9 {
     padding-left: 400px;
   }
-  .position{
+  .position {
     padding-left: 355px;
   }
-  .buttons{
+  .buttons {
     display: unset;
   }
   .slider--content {
@@ -965,14 +993,14 @@ section.third {
     align-items: flex-end;
     height: 80vh;
   }
-  .slider--feature button{
+  .slider--feature button {
     padding: 20px 70px;
   }
-  nav{
+  nav {
     margin: 0px 30px 0px 30px;
     height: auto;
   }
-  .hamburger{
+  .hamburger {
     padding-bottom: 22px;
   }
   .subhead {
@@ -1098,9 +1126,7 @@ section.third {
     place-content: unset;
     padding: unset;
   }
-  
-  
-  
+
   .h2Text {
     display: unset;
   }
@@ -1158,7 +1184,7 @@ section.third {
     display: flex;
   }
 }
-.position10{
+.position10 {
   text-align: center;
 }
 .tekst2 {
@@ -1204,15 +1230,13 @@ section.third {
   display: none;
 }
 
-
-
 .h2Text {
   display: unset;
 }
 .fourth {
   padding-top: 90px;
 }
-.test2{
+.test2 {
   width: 90px;
 }
 .cardcard {
@@ -1230,16 +1254,16 @@ section.third {
 .mobileMenu {
   padding-right: 30px;
 }
-.h2Text{
+.h2Text {
   font-size: 22px;
 }
-.position2{
+.position2 {
   text-align: center;
 }
-.position999{
+.position999 {
   padding-left: 190px;
 }
-.containerText{
+.containerText {
   max-width: 300px;
   margin: auto;
 }
@@ -1394,8 +1418,7 @@ div[class*="box"] {
   margin-right: 20%;
   margin-top: 50px;
 }
-.zgrada {
-}
+
 .zgrada1 {
   width: 350px;
   transition: 0.3s;
