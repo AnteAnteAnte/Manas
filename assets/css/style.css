@@ -530,7 +530,7 @@ a {
   padding-right: 22%;
 }
 
-header {
+.index-header {
   height: 100vh;
   background: url("../images/dnevni-boravak.png");
   background-size: cover;
@@ -892,6 +892,25 @@ section.third {
   }
 }
 
+@media only screen and (max-width: 1500px) {
+  .rightSide5 {
+    left: 75px;
+  }
+  .rightSide5 img{
+    width: 106%;
+  }
+  .third-para {
+    font-size: 26px;
+  }
+  .second-para {
+    font-size: 20px;
+  }
+  .first-para {
+    font-size: 12px;
+  }
+
+}
+
 @media only screen and (min-width: 1100px) {
   .rightSide1 {
     display: unset;
@@ -964,6 +983,8 @@ section.third {
   .slider--btn-left img:hover,
   .slider--btn-right img:hover {
     background-color: none;
+    width: 40px;
+    height: 40px;
   }
   .links li a {
     font-size: 16px;
