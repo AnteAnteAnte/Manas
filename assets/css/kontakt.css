@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Russo One", sans-serif;
+}
+
+header {
+    background: black;
+}
+
+section.contact--all-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+h1 {
+    display: block;
+    color: #b23838;
+    font-size: 36px;
+    letter-spacing: 4px;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input, textarea {
+    margin-bottom: 20px;
+    width: 500px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #e4e4e4;
+    background: #e4e4e4;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[type="text"]
+{
+    font-size:20px;
+    padding-left: 10px;
+}
+
+form input {
+    height: 80px;
+}
+
+textarea {
+    height: 180px;
+}
+
+form input::placeholder {
+    padding: 10px 0px 50px 0px;
+}
+
+textarea::placeholder {
+    padding: 10px 0px 50px 0px;
+}
+
+button {
+    width: 190px;
+    height: 50px;
+    background: #B23838;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Mapa i Kontakti - styles */
+.right-contacts-map {
+    height: 47vh;
+}
+
+.map {
+    margin-bottom: 20px;
+}
+
+iframe {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.phone-mail-location {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url("../images/manas-kontakt.svg");
+    background-color: #b23838;
+    border-radius: 10px;
+    height: 200px;
+    font-family: Poppins;
+}
+
+.phone-mail-location h3 {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.phone-mail-location p {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.phone, .email, .location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    form input, textarea {
+        width: 400px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea[type="text"] {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    section.contact--all-content {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 200px;
+    }
+    .left-contact-form {
+        margin-bottom: 50px;
+    }
+    .right-contacts-map {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    iframe, .phone-mail-location {
+        width: 420px;
+    }
+    .phone-mail-location h3 {
+        font-size: 12px;
+    }
+    .phone-mail-location p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    section.contact--all-content {
+        margin: 20px 20px 200px 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+    form input, textarea {
+        width: 300px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea[type="text"] {
+        font-size: 14px;
+    }
+
+    iframe, .phone-mail-location {
+        width: 320px;
+    }
+    .phone-mail-location {
+        flex-direction: column;
+    }
+}
