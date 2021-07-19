@@ -1567,3 +1567,17 @@ div[class*="box"] {
   height: 10px;
   background: var(--primary-color1);
 }
+.containertext1{
+  text-align: center;
+  margin-top: 100px;
+}
+.ttekst{
+  font-size: 32px;
+  font-weight: 600;
+}
+.lineline{
+  margin: 0 auto;
+  width: 750px;
+  height: 10px;
+  background: var(--primary-color1);
+}
