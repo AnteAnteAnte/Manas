@@ -1544,13 +1544,26 @@ div[class*="box"] {
   opacity: 1;
 }
 .botun {
-  background-color: #04AA6D;
+  background-color: var(--primary-color1);
   color: white;
   font-size: 16px;
   padding: 30px 80px;
   transition: 0.3s;
-  opacity: 0.9;
 }
 .botun:hover{
   transform: scale(1.25);
+}
+.containertext1{
+  text-align: center;
+  margin-top: 100px;
+}
+.ttekst{
+  font-size: 32px;
+  font-weight: 600;
+}
+.lineline{
+  margin: 0 auto;
+  width: 750px;
+  height: 10px;
+  background: var(--primary-color1);
 }
