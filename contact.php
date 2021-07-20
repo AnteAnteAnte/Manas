@@ -1,5 +1,4 @@
 <?php include "sendmail.php"; ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,6 +11,7 @@
     <title>Kontakt</title>
 </head>
 <body>
+<button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button> 
 <header class="kontakt-header">
     <nav>
         <a class="logo" href="index.html">

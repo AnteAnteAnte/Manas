@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
     <title>Manas</title>
 </head>
 <body>
-     <button id="myBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button> 
+<button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button> 
 <main>
-    <header class="index-header">
+    <header class="projekti-header">
         <nav>
             <a class="logo" href="index.html">
                 <img class="logi" src="assets/images/logo.svg" alt="Logo">
@@ -28,28 +29,12 @@
         </nav>
         <div class="overlay">
             <ul class="links">
-                <li><a class="active" href="#">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="projekti.html">Projekti</a></li>
                 <li><a href="#">Our Story</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
             </ul>
         </div>     
-        
-        <div class="slider--content">
-            <div class="slider--feature">
-                <h1 class="slider--heading"></h1>
-                <h4 class="slider--heading-four"></h4>
-                <button>Projekti</button>
-            </div>
-            <div class="buttons">
-                <button class="slider--btn-left">
-                    <img src="assets/images/arrowLeft.svg" alt="left-arrow">
-                </button>
-                <button class="slider--btn-right">
-                    <img  src="assets/images/arrowRight.svg" alt="right-arrow">
-                </button>
-            </div>
-        </div>
     </header> 
 
     <div class="containertext1">
@@ -293,10 +278,8 @@
         </div>
     </main>
     
-    
-    
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.rawgit.com/inexorabletash/polyfill/$TAGNAME/polyfill.min.js"></script>
 
-    
 </body>
 </html>
