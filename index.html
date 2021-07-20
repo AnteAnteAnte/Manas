@@ -10,8 +10,8 @@
     <title>Manas</title>
 </head>
 <body>
-    <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button> 
-<main>
+    <button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button> 
+    <main>
     <header class="index-header">
         <nav>
             <a class="logo" href="index.html">
@@ -394,6 +394,7 @@
 <script type="module">
     /* import {tns} from './src/tiny-slider.js'; */
     
+    
     var slider = tns({
         container: '.my-slider',
         items: 3,
@@ -411,7 +412,7 @@
     slider.goTo('next');
     slider.goTo('first');
     slider.goTo('last');
-
+    
     document.querySelector('.prev-button').onclick = function () {
         slider.goTo('prev');
     };
@@ -423,6 +424,5 @@
 <script src="assets/js/main.js"></script>
 <script src="https://cdn.rawgit.com/inexorabletash/polyfill/$TAGNAME/polyfill.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 </body>
 </html>

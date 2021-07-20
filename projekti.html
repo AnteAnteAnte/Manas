@@ -8,7 +8,7 @@
     <title>Manas</title>
 </head>
 <body>
-     <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button> 
+     <button id="myBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button> 
 <main>
     <header class="index-header">
         <nav>
@@ -293,82 +293,9 @@
         </div>
     </main>
     
-    <script type="module">
-        /* import {tns} from './src/tiny-slider.js'; */
-        
-        var slider = tns({
-            container: '.my-slider',
-            items: 3,
-            edgePadding: 50,
-            swipeAngle: false,
-            speed: 1000,
-            slideBy: 'page',
-            autoplay: false,
-            controls: false,
-            nav: false,
-            mouseDrag: true,
-        });
-        slider.goTo(3);
-        slider.goTo('prev');
-        slider.goTo('next');
-        slider.goTo('first');
-        slider.goTo('last');
     
-        document.querySelector('.prev-button').onclick = function () {
-            slider.goTo('prev');
-        };
-        document.querySelector('.next-button').onclick = function () {
-            slider.goTo('next')
-        }
-    </script>
     
     <script src="assets/js/main.js"></script>
-    <script src="https://cdn.rawgit.com/inexorabletash/polyfill/$TAGNAME/polyfill.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    
-
-
-
-
-
-
-
-
-
-
-
-    <script type="module">
-        /* import {tns} from './src/tiny-slider.js'; */
-        
-        var slider = tns({
-            container: '.my-slider',
-            items: 3,
-            edgePadding: 50,
-            swipeAngle: false,
-            speed: 1000,
-            slideBy: 'page',
-            autoplay: false,
-            controls: false,
-            nav: false,
-            mouseDrag: true,
-        });
-        slider.goTo(3);
-        slider.goTo('prev');
-        slider.goTo('next');
-        slider.goTo('first');
-        slider.goTo('last');
-    
-        document.querySelector('.prev-button').onclick = function () {
-            slider.goTo('prev');
-        };
-        document.querySelector('.next-button').onclick = function () {
-            slider.goTo('next')
-        }
-    </script>
-    
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdn.rawgit.com/inexorabletash/polyfill/$TAGNAME/polyfill.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
     
 </body>

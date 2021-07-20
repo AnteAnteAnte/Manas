@@ -13,6 +13,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -1351,7 +1352,7 @@ footer {
   bottom: 10px;
 }
 
-#scrollToTopBtn {
+#mybtn {
   display: none;
   background-color: var(--primary-color1);
   border: none;
@@ -1368,7 +1369,7 @@ footer {
   z-index: 1000;
 }
 
-#scrollToTopBtn:hover {
+#mybtn:hover {
   transform: scale(1.05);
 }
 
