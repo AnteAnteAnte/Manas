@@ -9,7 +9,11 @@ body {
 }
 
 header {
-    background: black;
+    background: #181717;
+}
+
+#nav-icon2 span {
+    background-color: white!important;
 }
 
 section.contact--all-content {

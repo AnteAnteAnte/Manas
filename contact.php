@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/kontakt.css">
+    <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
     <title>Kontakt</title>
 </head>
 <body>
