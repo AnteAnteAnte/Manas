@@ -16,6 +16,10 @@
   --text: #4f4f4f;
 }
 
+main {
+  width: 100%;
+}
+
 html
 {
   margin: 0px;
@@ -1080,6 +1084,14 @@ section.third {
   margin: auto;
 }
 @media only screen and (max-width: 696px) {
+  .carousel-slider--all {
+    flex-direction: column-reverse;
+  }
+  .hamburger {
+    transform: scale(0.5);
+    padding-bottom: 15px;
+    z-index: 1000;
+  }
   .links {
     margin: 0px 0px 0px 30px;
   }
