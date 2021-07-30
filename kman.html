@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js"></script>
     <title>Projekti u izgradnji - Kman</title>
-  </head>
-  <body>
       <div class="buildingsContainer">
         <div class="building">
             <div class="floors">
@@ -27,23 +25,32 @@
             </div>
             <div class="floorContainer">
                 <div style="position: relative; width: 700px; height: 394px;">
-                    <img id="img-imgmap201293016112" class="imw-image" usemap="#building-a" alt="" width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;" src="assets/images/zgradaA.jpg" alt="">
-                    <canvas id="myCanvas" class="imw-canvas" width="700";  100; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="394"></canvas>
-                    <map class="imw-map" name="building-a" style="cursor: pointer;">
-                        <area href="assets/images/incoming/kman/A1.png"class="canvas" onmouseover='myHover(this);' onmouseout='myLeave();' shape="poly" coords="242,145,357,115,547,147,547,188,357,165,242,188">
-                        <area shape="poly" coords="242,105,357,65,547,106,547,147,357,115,242,145">
-                        <area shape="poly" coords="242,53,357,0,547,53,547,106,357,65,242,105">
-                        <area shape="poly" coords="242,188,357,165,547,188,547,228,357,215,242,228">
-                        <area shape="poly" coords="242,228,357,215,547,228,547,270,357,265,242,270">
-                        <area shape="poly" coords="242,270,357,265,547,270,547,310,357,315,242,310">
-                        <area shape="poly" coords="242,310,357,315,547,310,547,355,357,367,242,352"> 
-                    </map>
+                    <img class="imw-image" usemap="#building-a" alt="" width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;" src="assets/images/zgradaA.jpg" alt="">
+                    <canvas id="myCanvas" class="imw-canvas" width="700";  100; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2; height="394"></canvas>
+                        <map class="imw-map" name="building-a" style="cursor: pointer;">
+                            <area id="1"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,145,357,115,547,147,547,188,357,165,242,188">
+                            <area id="2"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,105,357,65,547,106,547,147,357,115,242,145">
+                            <area id="3"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,53,357,0,547,53,547,106,357,65,242,105">
+                            <area id="4"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,188,357,165,547,188,547,228,357,215,242,228">
+                            <area id="5"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,228,357,215,547,228,547,270,357,265,242,270">
+                            <area id="6"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,270,357,265,547,270,547,310,357,315,242,310">
+                            <area id="7"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,310,357,315,547,310,547,355,357,367,242,352"> 
+                        </map>
                 </div>
             </div>
         </div>
     </div> 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/canva.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="./imageMapWrapper/js/imageMapWrapper.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $('img[usemap]').imageMapWrapper().resize();
+        });
+        /* $("area").click(function() {
+           var areaId = $(this).attr("id");
+           $("img").attr("src", "./assets/images/znjan.png");
+        }); */
+    </script>
   </body>
 </html>
