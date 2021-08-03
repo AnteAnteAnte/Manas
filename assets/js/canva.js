@@ -1,12 +1,12 @@
- 
 $(document).ready(function(){
     $('img[usemap]').imageMapWrapper().resize();
-});
+    $('img[usemap]').imageMapResize();
+})
 
-$("#6").click(function() {
+/*$("#6").click(function() {
     var areaId = $(this).attr("id");
     $("img").attr("src", "./assets/images/incoming/kman/A1.png");
-}); 
+});
 
 $(function () {
     $(window)
@@ -22,5 +22,5 @@ $(function () {
         $('a[href="' + hash + '"]', ".tabNavigation").addClass("selected");
     })
     .trigger("hashchange")
-});   
+});*/
 

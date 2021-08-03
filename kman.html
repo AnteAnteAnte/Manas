@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="assets/css/kman.css">
     <script src="assets/js/main.js"></script>
     <title>Projekti u izgradnji - Kman</title>
+  </head>
       <div class="buildingsContainer">
         <div class="building">
             <div class="floors">
                 <div class="logoBuilding">
-                    <a href="#content1">Zgrada A</a>
+                    <h1>Zgrada A</h1>
                 </div>
                 <div class="floorsDropdown">
-                    <a href="#">Prizemlje</a>
-                    <a href="#second">Prvi kat</a>
-                    <a href="#third">Drugi kat</a>
-                    <a href="#fourth">Treći kat</a>
-                    <a href="#fifth">Četvrti kat</a>
-                    <a href="#sixth">Pet kat</a>
-                    <a href="#seven">Šesti kat</a>
+                    <h1 >Prizemlje</h1>
+                    <h1 >Prvi kat</h1>
+                    <h1 >Drugi kat</h1>
+                    <h1 >Treći kat</h1>
+                    <h1 >Četvrti kat</h1>
+                    <h1 >Pet kat</h1>
+                    <h1 >Šesti kat</h1>
                 </div>
             </div>
             <div>
 
-                <div class="floorContainer content" id="content1">
+                <div class="floorContainer">
                     <div style="position: relative; width: 700px; height: 394px;">
                         <img class="imw-image" id="map" usemap="#building-a" alt="" width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;" src="assets/images/zgradaA.jpg" alt="">
-                        <canvas id="myCanvas" class="imw-canvas" width="700";  100; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2; height="394"></canvas>
+                        <canvas id="myCanvas" class="imw-canvas" width="700"; style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="394"></canvas>
                         <map class="imw-map" name="building-a" style="cursor: pointer;">
-                            <area id="1"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,145,357,115,547,147,547,188,357,165,242,188">
+                            <area id="1"  data-settings="{fillColor: '000000'}" shape="poly" coords="242,145,357,115,547,147,547,188,357,165,242,188">
                             <area id="2"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,105,357,65,547,106,547,147,357,115,242,145">
                             <area id="3"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,53,357,0,547,53,547,106,357,65,242,105">
                             <area id="4"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,188,357,165,547,188,547,228,357,215,242,228">
@@ -41,39 +42,33 @@
                         </map>
                     </div>
                 </div>
-                <div class="prvi-kat" href="second">
-                    <div style="position: relative; width: 700px; height: 700px;">
-                        <img src="assets/images/incoming/kman/A1.png" usemap="#map-a" alt="" width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
-                        <canvas width="700" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="700"></canvas>
-                        <map name="map-a" style="cursor: pointer;">
-                            <area data-settings="{fillColor: 'E3A7A7'}" shape="poly" coords="115,77,570,77,570,220,115,220">
-                            <area data-settings="{fillColor: 'E3A7A7'}" shape="poly" coords="103,333,310,333,310,622,210,622,210,525,103,525">
-                            <area data-settings="{fillColor: '00ff00'}" shape="poly" coords="317,333,592,333,592,518,455,518,455,622,317,622">
-                        </map>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="./imageMapWrapper/js/imageMapWrapper.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        var activeId = $(".active").each(function(){
-            $("#content" + $(this).attr("id").replace("tab","")).show();
-        });
-        $(".tabs a").click(function() {
-            var $tabs =$(this).closest(".tabs"); 
-      $("#content" +$tabs.attr("data-lastContent")).hide();
-      $(this).closest(".tabs").find(".active").removeClass("active");
-      $(this).addClass("active")
-      var id = $(this).closest("li").attr("id").replace("tab","");
-       $tabs.attr("data-lastContent", id);
-       $("#content" + id).show();
-    });
-    });
-</script>
-    <script src="assets/js/canva.js"></script>
+      <script src="./image-map-resizer/js/imageMapResizer.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+      $('img[usemap]').imageMapWrapper().resize();
+      $('img[usemap]').rwdImageMaps();
+      });
+          $(document).ready(function() {
+              var activeId = $(".active").each(function(){
+                  $("#content" + $(this).attr("id").replace("tab","")).show();
+              });
+              $(".tabs a").click(function() {
+                  var $tabs =$(this).closest(".tabs");
+                  $("#content" +$tabs.attr("data-lastContent")).hide();
+                  $(this).closest(".tabs").find(".active").removeClass("active");
+                  $(this).addClass("active")
+                  var id = $(this).closest("li").attr("id").replace("tab","");
+                  $tabs.attr("data-lastContent", id);
+                  $("#content" + id).show();
+              });
+          });
+      </script>
   </body>
 </html>
