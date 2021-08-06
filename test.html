@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
 <style>
-    .content {
-        display: none;
-    }
     img {
         width: auto;
         max-width: 100%;
     }
+    .hide {
+        display: none;
+    }
+    .current {
+        color: red;
+    }
 </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+</head>
 <body>
 
-<div class="tabs" data-lastContent="1">
+<div class="tabs">
     <ul>
-        <li id="tab1" class="active"><a href="#">Link 1</a></li>
-        <li id="tab2"><a href="#">Link 2</a></li>
-        <li id="tab3"><a href="#">Link 3</a></li>
-        <li id="tab4"><a href="#">Link 4</a></li>
+      <li><a href="#sub1" class="current">Glavni hover</a></li>
+      <li><a href="#sub2" >Sekundarni hover</a></li>
     </ul>
 </div>
 
-<div id="content1" class="content">
+<div id="sub1" class="content">
     <div style="position: relative; width: 700px; height: 394px;">
         <img class="imw-image" id="map" usemap="#building-a" alt="" width="700"
              style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;"
@@ -53,7 +55,7 @@
     </div>
 </div>
 
-<div id="content2" class="content">
+<div id="sub2" class="content hide">
     <div style="position: relative; width: 700px; height: 700px;">
         <img src="assets/images/incoming/kman/A1.png" usemap="#map-a" alt="" width="700"
              style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
@@ -69,32 +71,35 @@
     </div>
 </div>
 
-<div id="content3" class="content">Oceli uspit</div>
-<div id="content4" class="content">Izgleda da hoce</div>
-
-<div class="tabs" data-lastContent="5"></div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./imageMapWrapper/js/imageMapWrapper.js"></script>
     <script src="./image-map-resizer/js/imageMapResizer.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            var activeId = $(".active").each(function () {
-                $("#content" + $(this).attr("id").replace("tab", "")).show();
+        function switchContent(obj) {
+            obj = (!obj) ? 'sub1' : obj;
+            var contentDivs = document.getElementsByTagName('div');
+            for (i=0; i<contentDivs.length; i++) {
+                if (contentDivs[i].id && contentDivs[i].id.indexOf('sub') !== -1) {
+                    contentDivs[i].className = 'hide';
+                }
+            }
+            document.getElementById(obj).className = '';
+        }
+        function checkTab() {
+            $('a').each(function() {
+                $(this).click(function() {
+                    tab = $(this).attr('href').split('#');
+                    switchContent(tab[1]);
+                    $('.current').attr('class','');
+                    $(this).attr('class','current');
+                });
             });
-            $(".tabs a").click(function () {
-                var $tabs = $(this).closest(".tabs");
-                $("#content" + $tabs.attr("data-lastContent")).hide();
-                $(this).closest(".tabs").find(".active").removeClass("active");
-                $(this).addClass("active")
-                var id = $(this).closest("li").attr("id").replace("tab", "");
-                $tabs.attr("data-lastContent", id);
-                $("#content" + id).show();
-            });
-        });
+        }
+        window.onload = function() {
+            checkTab();
+        };
     </script>
-
     <script src="assets/js/canva.js"></script>
     <script src="assets/js/stanovi.js"></script>
 </body>
