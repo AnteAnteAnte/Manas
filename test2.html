@@ -6,74 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testna Stranica za klik komponente</title>
 </head>
-<body>
-    <div class="links">
-        <a href="#first">Klik</a>
-        <a href="#second">Test</a>
-        <a href="#third">Brate</a>
-    </div>
+<style>
 
-    <div class="tab">
-        <div id="first" style="position: relative; width: 700px; height: 394px;">
-            <img class="imw-image" id="map" usemap="#building-a" alt="" width="700"
-                style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;"
-                src="assets/images/zgradaA.jpg" alt="">
-            <canvas id="myCanvas" class="imw-canvas"
-                    style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" width="700"
-                    height="394"></canvas>
-            <map class="imw-map" name="building-a" style="cursor: pointer;">
-                <area id="1" data-settings="{'fillColor': '00ff00'}" shape="poly"
-                    coords="242,145,357,115,547,147,547,188,357,165,242,188">
-                <area id="2" data-settings="{'fillColor': '00ff00'}" shape="poly"
-                    coords="242,105,357,65,547,106,547,147,357,115,242,145">
-                <area id="3" data-settings="{'fillColor': '00ff00'}" shape="poly"
-                    coords="242,53,357,0,547,53,547,106,357,65,242,105">
-                <area id="4" data-settings="{'fillColor': '00ff00'}" shape="poly"
-                    coords="242,188,357,165,547,188,547,228,357,215,242,228">
-                <area id="5" data-settings="{'fillColor': '00ff00'}" shape="poly"
-                    coords="242,228,357,215,547,228,547,270,357,265,242,270">
-                <area id="6" data-settings="{'fillColor': '00ff00'}" shape="poly"
-                    coords="242,270,357,265,547,270,547,310,357,315,242,310">
-                <area id="7" data-settings="{'fillColor': '00ff00'}" shape="poly"
-                    coords="242,310,357,315,547,310,547,355,357,367,242,352">
-            </map>
-        </div>
+</style>
+<body>
+
+<div class="floorContainer" style="position: relative;">
+    <p id="A_1" class="apartmentLabel">A11</p>
+    <p id="A_2" class="apartmentLabel">A12</p>
+    <p id="A_3" class="apartmentLabel">A13</p>
+    <div style="position: relative; width: 700px; height: 700px;">
+        <img src="assets/images/incoming/kman/A1.png" usemap="#map-a" alt="" width="700" style="position: absolute; top: 0px; left: 0px; z-index: 100; user-select: none;">
+        <canvas width="700" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
+                height="700"></canvas>
+        <map name="map-a" style="cursor: pointer;">
+            <area shape="poly" coords="115,77,570,77,570,220,115,220">
+            <area shape="poly" coords="103,333,310,333,310,622,210,622,210,525,103,525">
+            <area shape="poly" coords="317,333,592,333,592,518,455,518,455,622,317,622">
+        </map>
     </div>
-    <div class="tab">
-        <div id="second" style="position: relative; width: 700px; height: 700px;">
-            <img src="assets/images/incoming/kman/A1.png" usemap="#map-a" alt="" width="700"
-                 style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
-            <canvas width="700" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
-                    height="700"></canvas>
-            <map name="map-a" style="cursor: pointer;">
-                <area data-settings="{'fillColor': '00ff00'}" shape="poly" coords="115,77,570,77,570,220,115,220">
-                <area data-settings="{'fillColor': '00ff00'}" shape="poly"
-                      coords="103,333,310,333,310,622,210,622,210,525,103,525">
-                <area data-settings="{'fillColor': '00ff00'}" shape="poly"
-                      coords="317,333,592,333,592,518,455,518,455,622,317,622">
-            </map>
-        </div>
-    </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./imageMapWrapper/js/imageMapWrapper.js"></script>
 <script src="./image-map-resizer/js/imageMapResizer.js"></script>
-<script type="text/javascript">
-$(function () {
-    $(window)
-    .on("hashchange", function () {
-        var tabContainers = $(".tabs > div"),
-        hash = window.location.hash != "" ? window.location.hash : "#first";
-
-        console.log(hash);
-
-        tabContainers.hide();
-        tabContainers.filter(hash).fadeIn();
-        $(".tabNavigation li a").removeClass("selected");
-        $('a[href="' + hash + '"]', ".tabNavigation").addClass("selected");
-    })
-    .trigger("hashchange")
-});
-</script>
-<script src="assets/js/canva.js"></script>
+<script src="assets/js/floors.js"></script>
 </body>
 </html>

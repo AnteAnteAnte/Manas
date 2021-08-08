@@ -1,53 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/kman.css">
-    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
     <title>Projekti u izgradnji - Kman</title>
-  </head>
-      <div class="buildingsContainer">
-            <div class="building">
-                <div class="floors">
-                    <div class="logoBuilding">
-                        <h1>Zgrada A</h1>
-                    </div>
-                    <div class="floorsDropdown">
-                        <a href="#" >Prizemlje</a>
-                        <a href="#" >Prvi kat</a>
-                        <a href="#" >Drugi kat</a>
-                        <a href="#" >Treći kat</a>
-                        <a href="#" >Četvrti kat</a>
-                        <a href="#" >Pet kat</a>
-                        <a href="#" >Šesti kat</a>
-                    </div>
+</head>
+<main>
+    <button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button>
+    <header class="kman-header" style="background: #181717;">
+        <nav>
+            <a class="logo" href="index.html">
+                <img class="logi" src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <div class="hamburger" onclick="animateIcon()">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            <div>
-            <div class="floorContainer">
-                <div style="position: relative; width: 700px; height: 394px;">
-                    <img style="width: auto; max-width: 100%;" class="imw-image" id="map" usemap="#building-a" alt="" width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;" src="assets/images/zgradaA.jpg" alt="">
-                    <canvas id="myCanvas" class="imw-canvas" width="700"; style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="394"></canvas>
+            </div>
+        </nav>
+        <div class="overlay">
+            <ul class="links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <h1 class="head-title">Kman</h1>
+    <section class="zgradaA">
+        <div class="buildingContainer">
+            <h2>Zgrada A</h2>
+            <h4>Projektom Kman predviđena je izgradnja dva stambena objekta u zapadnom dijelu istoimenog naselja
+                <br>
+                Dobra prometna povezanost, blizina osnovne škole, ambulante, tržnice i društvenih sadržaja poput
+                trgovačkog centra Joker čine lokaciju projekta Kman iznimno atraktivnom.
+            </h4>
+            <h3>Legenda</h3>
+            <div class="status-wrapper">
+                <div class="sell">
+                    <p>prodan</p>
+                    <div class="red-sell"></div>
+                </div>
+                <div class="free">
+                    <p>slobodan</p>
+                    <div class="green-free"></div>
+                </div>
+            </div>
+            <button onclick="location.href" class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                <span class="button-text">See PDF</span>
+            </button>
+        </div>
+        <div class="floorContainer">
+            <div id="sub1">
+                <div class="image-wrapper" style="position: relative; width: 700px; height: 394px;">
+                    <h2>Zgrada A</h2>
+                    <img style="width: auto; max-width: 100%;" class="imw-image" id="map" usemap="#building-a" alt=""
+                         width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;"
+                         src="assets/images/zgradaA.jpg" alt="">
+                    <canvas id="myCanvas" class="imw-canvas" width="700" ;
+                            style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
+                            height="394"></canvas>
                     <map class="imw-map" name="building-a" style="cursor: pointer;">
-                        <area id="1"  data-settings="{fillColor: '000000'}" shape="poly" coords="242,145,357,115,547,147,547,188,357,165,242,188">
-                        <area id="2"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,105,357,65,547,106,547,147,357,115,242,145">
-                        <area id="3"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,53,357,0,547,53,547,106,357,65,242,105">
-                        <area id="4"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,188,357,165,547,188,547,228,357,215,242,228">
-                        <area id="5"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,228,357,215,547,228,547,270,357,265,242,270">
-                        <area id="6"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,270,357,265,547,270,547,310,357,315,242,310">
-                        <area id="7"  data-settings="{fillColor: '00ff00'}" shape="poly" coords="242,310,357,315,547,310,547,355,357,367,242,352"> 
+                        <area id="1" data-settings="{fillColor: '000000'}" shape="poly"
+                              coords="242,145,357,115,547,147,547,188,357,165,242,188">
+                        <area id="2" data-settings="{fillColor: '00ff00'}" shape="poly"
+                              coords="242,105,357,65,547,106,547,147,357,115,242,145">
+                        <area id="3" data-settings="{fillColor: '00ff00'}" shape="poly"
+                              coords="242,53,357,0,547,53,547,106,357,65,242,105">
+                        <area id="4" data-settings="{fillColor: '00ff00'}" shape="poly"
+                              coords="242,188,357,165,547,188,547,228,357,215,242,228">
+                        <area id="5" data-settings="{fillColor: '00ff00'}" shape="poly"
+                              coords="242,228,357,215,547,228,547,270,357,265,242,270">
+                        <area id="6" href="#sub2" data-settings="{fillColor: '00ff00'}" shape="poly"
+                              coords="242,270,357,265,547,270,547,310,357,315,242,310">
+                        <area id="7" href="#sub0" data-settings="{fillColor: '00ff00'}" shape="poly"
+                              coords="242,310,357,315,547,310,547,355,357,367,242,352">
+                    </map>
+                    <ul class="floorsNumbers">
+                        <li><a href="#">06</a></li>
+                        <li><a href="#">05</a></li>
+                        <li><a href="#">04</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#sub2">01</a></li>
+                        <li><a href="#sub0">00</a></li>
+                    </ul>
+                </div>
+                <p>Pređite preko slike za prikaz dostupnih stanova te kliknite na željeni stan da vizualizirate željeni
+                    izgled vašeg budućeg stana</p>
+            </div>
+            <!--Prizemlje-->
+            <div id="sub0" class="hide">
+                <div style="position: relative; width: 700px; height: 700px;">
+                    <img src="assets/images/incoming/kman/prizemljeA.png" usemap="#map-a" alt="" width="700"
+                        style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="700" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
+                            height="700"></canvas>
+                    <map name="map-a" style="cursor: pointer;">
+                        <area shape="poly" target="_blank" href="assets/pdf/prizemljeA01.pdf" coords="115,77,570,77,570,220,115,220">
+                        <area shape="poly" coords="103,333,310,333,310,622,210,622,210,525,103,525">
+                        <area shape="poly" coords="317,333,592,333,592,518,455,518,455,622,317,622">
                     </map>
                 </div>
+                <a style="display: block; color: #b23838; text-decoration: underline" href="#sub1">See Whole Building</a>
             </div>
+            <!--Prvi kat-->
+            <div id="sub2" class="hide">
+                <div class="floorContainer" style="position: relative;">
+                    <div style="position: relative; width: 700px; height: 700px;">
+                        <img src="assets/images/incoming/kman/A1.png" usemap="#map-a1" alt="" width="700"
+                             style="position: absolute; top: 0px; left: 0px; z-index: 100; user-select: none;">
+                        <canvas width="700"
+                                style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
+                                height="700"></canvas>
+                        <map name="map-a1" style="cursor: pointer;">
+                            <area shape="poly" coords="115,77,570,77,570,220,115,220">
+                            <area shape="poly" coords="103,333,310,333,310,622,210,622,210,525,103,525">
+                            <area shape="poly" coords="317,333,592,333,592,518,455,518,455,622,317,622">
+                        </map>
+                    </div>
+                </div>
+                <a style="display: block; color: #b23838; text-decoration: underline" href="#sub1">See Whole Building</a>
             </div>
+            <!--Drugi Kat-->
+            <!--Treci Kat-->
+            <!--Cetvrti Kat-->
+            <!--Peti Kat-->
+            <!--Šesti Kat-->
         </div>
-    </div> 
+    </section>
+</main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <script src="./imageMapWrapper/js/imageMapWrapper.js"></script>
-    <script src="./image-map-resizer/js/imageMapResizer.js"></script>
-    <script src="assets/js/canva.js"></script>     
-  </body>
+<section class="floorDrafts">
+</section>
+
+<script src="assets/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./imageMapWrapper/js/imageMapWrapper.js"></script>
+<script src="./image-map-resizer/js/imageMapResizer.js"></script>
+<script src="assets/js/floors.js"></script>
+</body>
 </html>

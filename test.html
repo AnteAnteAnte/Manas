@@ -5,26 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    img {
-        width: auto;
-        max-width: 100%;
-    }
-    .hide {
-        display: none;
-    }
-    .current {
-        color: red;
-    }
-</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+    <style>
+        img {
+            width: auto;
+            max-width: 100%;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 
 <div class="tabs">
     <ul>
-      <li><a href="#sub1" class="current">Glavni hover</a></li>
-      <li><a href="#sub2" >Sekundarni hover</a></li>
+        <li><a href="#sub1" class="current">Glavni hover</a></li>
+        <li><a href="#sub2">Sekundarni hover</a></li>
     </ul>
 </div>
 
@@ -37,70 +35,44 @@
                 style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" width="700"
                 height="394"></canvas>
         <map class="imw-map" name="building-a" style="cursor: pointer;">
-            <area id="1" data-settings="{fillColor: '00ff00'}" shape="poly"
+            <area id="1" data-settings="{'fillColor' : '#000000'}" shape="poly"
                   coords="242,145,357,115,547,147,547,188,357,165,242,188">
-            <area id="2" data-settings="{fillColor: '00ff00'}" shape="poly"
+            <area id="2" data-settings="{'fillColor' : '#00ff00'}" shape="poly"
                   coords="242,105,357,65,547,106,547,147,357,115,242,145">
-            <area id="3" data-settings="{fillColor: '00ff00'}" shape="poly"
+            <area id="3" data-settings="{'fillColor' : '#00ff00'}" shape="poly"
                   coords="242,53,357,0,547,53,547,106,357,65,242,105">
-            <area id="4" data-settings="{fillColor: '00ff00'}" shape="poly"
+            <area id="4" data-settings="{'fillColor' : '#00ff00'}" shape="poly"
                   coords="242,188,357,165,547,188,547,228,357,215,242,228">
-            <area id="5" data-settings="{fillColor: '00ff00'}" shape="poly"
+            <area id="5" data-settings="{'fillColor' : '#00ff00'}" shape="poly"
                   coords="242,228,357,215,547,228,547,270,357,265,242,270">
-            <area id="6" data-settings="{fillColor: '00ff00'}" shape="poly"
+            <area id="6" href="#sub2" data-settings="{'fillColor' : '#00ff00'}" shape="poly"
                   coords="242,270,357,265,547,270,547,310,357,315,242,310">
-            <area id="7" data-settings="{fillColor: '00ff00'}" shape="poly"
+            <area id="7" data-settings="{'fillColor' : '#00ff00'}" shape="poly"
                   coords="242,310,357,315,547,310,547,355,357,367,242,352">
         </map>
     </div>
 </div>
 
 <div id="sub2" class="content hide">
-    <div style="position: relative; width: 700px; height: 700px;">
-        <img src="assets/images/incoming/kman/A1.png" usemap="#map-a" alt="" width="700"
-             style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
-        <canvas width="700" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
-                height="700"></canvas>
-        <map name="map-a" style="cursor: pointer;">
-            <area data-settings="{fillColor: '000000'}" shape="poly" coords="115,77,570,77,570,220,115,220">
-            <area data-settings="{fillColor: '000000'}" shape="poly"
-                  coords="103,333,310,333,310,622,210,622,210,525,103,525">
-            <area data-settings="{fillColor: '000000'}" shape="poly"
-                  coords="317,333,592,333,592,518,455,518,455,622,317,622">
-        </map>
+    <div class="floorContainer">
+        <div style="position: relative; width: 700px; height: 700px;">
+            <img src="assets/images/incoming/kman/A1.png" usemap="#map-a" alt="" width="700"
+                 style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+            <canvas width="700" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
+                    height="700"></canvas>
+            <map class="imw-map" name="map-a" style="cursor: pointer;">
+                <area data-settings="{'fillColor': '#00ff00'}" shape="poly" coords="115,77,570,77,570,220,115,220">
+                <area data-settings="{'fillColor': '#00ff00'}" shape="poly" coords="103,333,310,333,310,622,210,622,210,525,103,525">
+                <area data-settings="{'fillColor': '#00ff00'}" shape="poly" coords="317,333,592,333,592,518,455,518,455,622,317,622">
+            </map>
+        </div>
     </div>
 </div>
 
 
 
-    <script src="./imageMapWrapper/js/imageMapWrapper.js"></script>
-    <script src="./image-map-resizer/js/imageMapResizer.js"></script>
-    <script type="text/javascript">
-        function switchContent(obj) {
-            obj = (!obj) ? 'sub1' : obj;
-            var contentDivs = document.getElementsByTagName('div');
-            for (i=0; i<contentDivs.length; i++) {
-                if (contentDivs[i].id && contentDivs[i].id.indexOf('sub') !== -1) {
-                    contentDivs[i].className = 'hide';
-                }
-            }
-            document.getElementById(obj).className = '';
-        }
-        function checkTab() {
-            $('a').each(function() {
-                $(this).click(function() {
-                    tab = $(this).attr('href').split('#');
-                    switchContent(tab[1]);
-                    $('.current').attr('class','');
-                    $(this).attr('class','current');
-                });
-            });
-        }
-        window.onload = function() {
-            checkTab();
-        };
-    </script>
-    <script src="assets/js/canva.js"></script>
-    <script src="assets/js/stanovi.js"></script>
+<script src="./imageMapWrapper/js/imageMapWrapper.js"></script>
+<script src="./image-map-resizer/js/imageMapResizer.js"></script>
+<script src="assets/js/floors.js"></script>
 </body>
 </html>

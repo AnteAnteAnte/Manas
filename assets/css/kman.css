@@ -4,165 +4,97 @@ body {
   box-sizing: border-box;
 }
 
-.green {
-  background-color: green;
+section.zgradaA {
+  display: flex;
+  padding: 100px;
+  margin: 0;
 }
 
-.blue {
-  background-color: blue;
+.head-title {
+  position: relative;
+  padding-left: 100px;
+  width: min-content;
+  font-size: 40px;
 }
 
-.red {
-  background-color: red;
+.head-title:after {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background: #b23838;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: -25%;
 }
 
-section {
-  height: 100vh;
-  width: 100%;
+.buildingContainer {
+  text-align: left;
+}
+
+.status-wrapper {
+  display: flex;
+}
+
+.sell, .free {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
-h1 {
-  display: block;
+.green-free {
+  width: 20px;
+  height: 20px;
+  background: #00ff47;
+  border-radius: 50%;
+  margin: 10px;
 }
 
-#mybtn {
-  background-color: var(--primary-color1);
-  border: none;
-  border-radius: 15%;
-  color: white;
-  cursor: pointer;
-  font-size: 26px;
-  height: 62px;
-  width: 62px;
-  transition: 0.3s;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
+.red-sell {
+  width: 20px;
+  height: 20px;
+  background: #cc181e;
+  border-radius: 50%;
+  margin: 10px;
 }
 
-#mybtn.show {
-  opacity: 1;
-  visibility: visible;
+.buildingContainer h3 {
+  color: #b23838;
 }
 
-#mybtn:hover {
-  transform: scale(1.05);
-}
-
-.learn-more {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  background: transparent;
-  padding: 0;
-  font-size: inherit;
-  font-family: inherit;
-}
-
-button.learn-more {
-  width: 12rem;
-  height: auto;
-}
-
-button.learn-more .circle {
-  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
+.buildingContainer h2 {
+  color: #b23838;
   margin: 0;
-  width: 3rem;
-  height: 3rem;
-  background: #282936;
-  border-radius: 1.625rem;
+  font-size: 32px;
 }
 
-button.learn-more .circle .icon {
-  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
+.buildingContainer h4 {
+  color: #adadad;
+  width: 70%;
 }
 
-button.learn-more .circle .icon.arrow {
-  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
-  height: 0.125rem;
-  background: none;
-}
-
-button.learn-more .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.25rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-button.learn-more .button-text {
-  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
-  color: #282936;
-  font-weight: 700;
-  line-height: 1.6;
+.floorContainer p {
   text-align: center;
-  text-transform: uppercase;
 }
 
-button:hover .circle {
-  width: 100%;
+.image-wrapper h2 {
+  position: absolute;
+  z-index: 100;
+  left: 25px;
+  color: white;
 }
 
-button:hover .circle .icon.arrow {
-  background: #fff;
-  -webkit-transform: translate(1rem, 0);
-  transform: translate(1rem, 0);
+.floorsNumbers {
+  position: absolute;
+  z-index: 10;
+  right: 100px;
+  top: 55px;
 }
 
-button:hover .button-text {
-  color: #fff;
+.floorsNumbers li a {
+  color: #626262;
+  font-family: "Russo One", sans-serif;
 }
 
-.hovered {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-area {
-  fill: black;
-}
-
-.floorsDropdown a {
-  color: black;
-}
-
-
-a {
-  color: black;
+.hide {
+  display: none;
 }
