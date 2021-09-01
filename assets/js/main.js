@@ -7,10 +7,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.classList.add("show")
-    /* mybutton.style.display = "block"; */
   } else {
     mybutton.classList.remove("show")
-    /* mybutton.style.display = "none"; */
   }
 }
 
