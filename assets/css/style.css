@@ -1316,8 +1316,6 @@ section.third {
   .leftSide1 {
     padding-top: 100px;
   }
-  .second {
-  }
   .tekst2 {
     display: unset;
   }
@@ -1717,15 +1715,8 @@ div[class*="box"] {
   }
 }
 
-
-.position15{
-}
 .leftSide55{
   padding-bottom: 50px;
-}
-.leftSide56{
-}
-.position56{
 }
 .leftSide57{
   margin-left: 5%;

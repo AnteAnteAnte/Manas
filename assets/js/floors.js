@@ -1,8 +1,14 @@
 $(document).ready(function(){
-    $('img[usemap]').imageMapWrapper();
+    $('img[usemap]').maphilight( {
+        fillColor: 'FBF5EB',
+        fillOpacity: .7,
+        strokeColor: 'B2BEB5',
+        strokeOpacity: 1,
+        strokeWidth: 1
+    });
     $('img[usemap]').imageMapResize();
 })
-    function switchContent(obj) {
+function switchContent(obj) {
         obj = (!obj) ? 'sub1' : obj;
         var contentDivs = document.getElementsByTagName('div');
         for (i=0; i<contentDivs.length; i++) {
@@ -16,6 +22,7 @@ $(document).ready(function(){
         $('area').each(function() {
             $(this).click(function() {
                 tab = $(this).attr('href').split('#');
+                console.log(tab)
                 switchContent(tab[1]);
                 $('.current').attr('class','');
                 $(this).attr('class','current');
