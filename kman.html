@@ -70,26 +70,27 @@
             <div id="sub1">
                 <div class="image-wrapper" style="position: relative; width: 700px; height: 394px;">
                     <h2>Zgrada A</h2>
-                    <img style="width: auto; max-width: 100%;" class="imw-image" id="map" usemap="#building-a" alt=""
+                    <img style="width: auto; max-width: 100%;" class="imw-image hoverA" id="map" usemap="#building-a"
+                         alt=""
                          width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;"
                          src="assets/images/zgradaA.jpg" alt="">
                     <canvas id="myCanvas" class="imw-canvas" width="700" ;
                             style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
                             height="394"></canvas>
                     <map class="imw-map" name="building-a" style="cursor: pointer;">
-                        <area id="1" href="#sub7" data-settings="{fillColor: '000000'}" shape="poly"
+                        <area id="1" href="#sub7" data-settings="{'fillColor': '00ff00'}" shape="poly"
                               coords="242,145,357,115,547,147,547,188,357,165,242,188">
-                        <area id="2" href="#sub6" data-settings="{fillColor: '00ff00'}" shape="poly"
+                        <area id="2" href="#sub6" data-settings="{'fillColor': '00ff00'}" shape="poly"
                               coords="242,105,357,65,547,106,547,147,357,115,242,145">
-                        <area id="3" href="#sub5" data-settings="{fillColor: '00ff00'}" shape="poly"
+                        <area id="3" href="#sub5" data-settings="{'fillColor': '00ff00'}" shape="poly"
                               coords="242,53,357,0,547,53,547,106,357,65,242,105">
-                        <area id="4" href="#sub4" data-settings="{fillColor: '00ff00'}" shape="poly"
+                        <area id="4" href="#sub4" data-settings="{'fillColor': '00ff00'}" shape="poly"
                               coords="242,188,357,165,547,188,547,228,357,215,242,228">
-                        <area id="5" href="#sub3" data-settings="{fillColor: '00ff00'}" shape="poly"
+                        <area id="5" href="#sub3" data-settings="{'fillColor': '00ff00'}" shape="poly"
                               coords="242,228,357,215,547,228,547,270,357,265,242,270">
-                        <area id="6" href="#sub2" data-settings="{fillColor: '00ff00'}" shape="poly"
+                        <area id="6" href="#sub2" data-settings="{'fillColor': '00ff00'}" shape="poly"
                               coords="242,270,357,265,547,270,547,310,357,315,242,310">
-                        <area id="7" href="#sub0" data-settings="{fillColor: '00ff00'}" shape="poly"
+                        <area id="7" href="#sub0" data-settings="{'fillColor': '00ff00'}" shape="poly"
                               coords="242,310,357,315,547,310,547,355,357,367,242,352">
                     </map>
                     <ul class="floorsNumbers">
@@ -114,10 +115,13 @@
                             style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;"
                             height="700"></canvas>
                     <map name="map-a" style="cursor: pointer;">
-                        <area shape="poly" target="_blank" href="assets/pdf/prizemljeA01.pdf"
+                        <area data-settings="{'fillColor': '00ff00'}" shape="poly" target="_blank"
+                              href="assets/pdf/prizemljeA01.pdf"
                               coords="115,77,570,77,570,220,115,220">
-                        <area shape="poly" coords="103,333,310,333,310,622,210,622,210,525,103,525">
-                        <area shape="poly" coords="317,333,592,333,592,518,455,518,455,622,317,622">
+                        <area data-settings="{'fillColor': '00ff00'}" shape="poly"
+                              coords="103,333,310,333,310,622,210,622,210,525,103,525">
+                        <area data-settings="{'fillColor': '00ff00'}" shape="poly"
+                              coords="317,333,592,333,592,518,455,518,455,622,317,622">
                     </map>
                 </div>
                 <a style="display: block; color: #b23838; text-decoration: underline" href="#sub1">See Whole
@@ -230,6 +234,72 @@
         </div>
     </section>
 
+    <section class="zgradaB">
+        <div class="buildingContainer">
+            <h2>Zgrada B</h2>
+            <h4>Projektom Kman predviđena je izgradnja dva stambena objekta u zapadnom dijelu istoimenog naselja
+                <br>
+                Dobra prometna povezanost, blizina osnovne škole, ambulante, tržnice i društvenih sadržaja poput
+                trgovačkog centra Joker čine lokaciju projekta Kman iznimno atraktivnom.
+            </h4>
+            <h3>Legenda</h3>
+            <div class="status-wrapper">
+                <div class="sell">
+                    <p>prodan</p>
+                    <div class="red-sell"></div>
+                </div>
+                <div class="free">
+                    <p>slobodan</p>
+                    <div class="green-free"></div>
+                </div>
+            </div>
+            <button onclick="location.href" class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                <span class="button-text">See PDF</span>
+            </button>
+        </div>
+
+        <div class="floorContainer">
+            <div class="image-wrapper" style="position: relative; width: 781px; height: 440px;">
+                <h2>Zgrada B</h2>
+                <img style="width: auto; max-width: 100%;" class="imw-image hoverB" id="mapB" usemap="#building-b" alt="" width="781px" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;" src="assets/images/incoming/kman/zgradaB.jpg" alt="">
+                <canvas style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 5;" width="781"
+                        height="440"></canvas>
+                <map name="building-b" style="cursor: pointer;">
+                    <area shape="poly" data-settings="{'fillColor': '00ff00'}"
+                          coords="301.4125714285715,63.63154285714287,404.11611428571433,1.1163428571428573,606.1741714285715,44.653714285714294,606.1741714285715,109.40160000000002,404.11611428571433,74.79497142857144,301.4125714285715,122.7977142857143">
+                    <area shape="poly" data-settings="{'fillColor': '00ff00'}"
+                          coords="301.4125714285715,122.7977142857143,404.11611428571433,74.79497142857144,606.1741714285715,109.40160000000002,606.1741714285715,159.6370285714286,404.11611428571433,133.96114285714287,301.4125714285715,170.80045714285717">
+                    <area shape="poly" data-settings="{'fillColor': '00ff00'}"
+                          coords="301.4125714285715,170.80045714285717,404.11611428571433,133.96114285714287,606.1741714285715,159.6370285714286,606.1741714285715,209.87245714285717,404.11611428571433,193.1273142857143,301.4125714285715,218.80320000000003">
+                    <area shape="poly" data-settings="{'fillColor': '00ff00'}"
+                          coords="301.4125714285715,218.80320000000003,404.11611428571433,193.1273142857143,606.1741714285715,209.87245714285717,606.1741714285715,260.10788571428577,404.11611428571433,252.29348571428574,301.4125714285715,262.3405714285715">
+                    <area shape="poly" data-settings="{'fillColor': '00ff00'}"
+                          coords="301.4125714285715,262.3405714285715,404.11611428571433,252.29348571428574,606.1741714285715,260.10788571428577,606.1741714285715,310.3433142857143,404.11611428571433,309.22697142857146,301.4125714285715,310.3433142857143">
+                    <area shape="poly" data-settings="{'fillColor': '00ff00'}"
+                          coords="301.4125714285715,310.3433142857143,404.11611428571433,309.22697142857146,606.1741714285715,310.3433142857143,606.1741714285715,360.5787428571429,404.11611428571433,368.3931428571429,301.4125714285715,358.3460571428572">
+                    <area shape="poly" data-settings="{'fillColor': '00ff00'}"
+                          coords="301.4125714285715,357.22971428571435,389.6036571428572,368.3931428571429,580.4982857142858,362.8114285714286,580.4982857142858,426.44297142857147,389.6036571428572,440.9554285714286,301.4125714285715,420.8612571428572">
+                </map>
+
+                <ul class="floorsNumbers">
+                    <li><a href="#">07</a></li>
+                    <li><a href="#">06</a></li>
+                    <li><a href="#">05</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#sub2">01</a></li>
+                    <li><a href="#sub0">00</a></li>
+                </ul>
+            </div>
+            <p>Pređite preko slike za prikaz dostupnih stanova te kliknite na željeni stan da vizualizirate željeni
+                izgled vašeg budućeg stana</p>
+        </div>
+    </section>
+
     <section class="image-building-slider">
         <h1 class="head-title">Galerija</h1>
         <div class="slider" style="display:flex; justify-content: space-around">
@@ -274,14 +344,17 @@
 
             <div>
                 <p class="people-title">Projektni tim</p>
-                <p class="peple-stats">Saša Begović, Marko Dabrović, Tatjana Grozdanić Begović, Silvije Novak, Kristina Marković, Viktorija Jagodić, Uršula Juvan, Nives Krsnik Rister, Luka Krstulović, Nevena Kuzmanić, Leon Lazaneo, Ana Mikelić, Maša Milovac, Iva Peručić, Tomislav Soldo, Krunoslav Szoersen, Dragana Šimić, Deša Ucović, Dijana Vandekar</p>
+                <p class="peple-stats">Saša Begović, Marko Dabrović, Tatjana Grozdanić Begović, Silvije Novak, Kristina
+                    Marković, Viktorija Jagodić, Uršula Juvan, Nives Krsnik Rister, Luka Krstulović, Nevena Kuzmanić,
+                    Leon Lazaneo, Ana Mikelić, Maša Milovac, Iva Peručić, Tomislav Soldo, Krunoslav Szoersen, Dragana
+                    Šimić, Deša Ucović, Dijana Vandekar</p>
             </div>
 
         </div>
         <div class="map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446.4777162514124!2d16.474340348655517!3d43.5241220891927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355e45c4b87fed%3A0xa8447eafceaa54d4!2sSarajevska%20ul.%2046e%2C%2021000%2C%20Split!5e0!3m2!1shr!2shr!4v1626696574438!5m2!1shr!2shr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446.4777162514124!2d16.474340348655517!3d43.5241220891927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355e45c4b87fed%3A0xa8447eafceaa54d4!2sSarajevska%20ul.%2046e%2C%2021000%2C%20Split!5e0!3m2!1shr!2shr!4v1626696574438!5m2!1shr!2shr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
     <div class="contact-for-buying">

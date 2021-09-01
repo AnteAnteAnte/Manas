@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
 }
 
-section.zgradaA {
+section.zgradaA , section.zgradaB{
     display: flex;
     padding: 100px;
     margin: 0;
