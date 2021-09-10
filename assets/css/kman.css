@@ -175,7 +175,7 @@ section.zgradaB {
   text-align: center;
 }
 
-.contact-for-buying h3 span {
+.contact-for-buying h3 span a {
   text-transform: uppercase;
   color: #f05b5b;
 }
