@@ -97,7 +97,7 @@ section.zgradaB {
   font-family: "Russo One", sans-serif;
 }
 
-.hide {
+.hide, .hide-2 {
   display: none;
 }
 
