@@ -92,6 +92,10 @@ section.zgradaB {
   top: 55px;
 }
 
+.floorNumberB {
+  top: 35px; 
+}
+
 .floorsNumbers li a {
   color: #626262;
   font-family: "Russo One", sans-serif;
