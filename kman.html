@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/kman.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/oriantion-fix.min.js"></script>
     <title>Projekti u izgradnji - Kman</title>
 </head>
 <main>
@@ -73,7 +74,7 @@
             <div id="sub1">
                 <div class="image-wrapper" style="position: relative; width: 700px; height: 394px;">
                     <h2>Zgrada A</h2>
-                    <img style="width: auto; max-width: 100%;" id="mapA" class="imw-image" usemap="#building-a"
+                    <img id="mapA" class="image-resize" usemap="#building-a"
                         alt="" width="700"
                         style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;"
                         src="assets/images/zgradaA.jpg" alt="">
@@ -267,7 +268,7 @@
             <div id="tab1" style="display: block;">
                 <div class="image-wrapper" style="position: relative; width: 700.854px; height: 394px;">
                     <h2>Zgrada B</h2>
-                    <img src="assets/images/incoming/kman/Manas-ZgradaB.jpg" usemap="#building-b" alt="" width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <img class="image-resize" src="assets/images/incoming/kman/Manas-ZgradaB.jpg" usemap="#building-b" alt="" width="700" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
                     <canvas width="700" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="394"></canvas>
                     <map name="building-b" style="cursor: pointer;">
                         <area href="#tab2" shape="poly" coords="270.3294,57.06954,362.44164,1.00122,543.66246,40.0488,543.66246,98.11956,362.44164,67.08174,270.3294,110.13419999999999">
@@ -609,6 +610,8 @@
 <!-- Maphilight -->
 <script src="./maphilight/jquery.maphilight.js"></script>
 <script src="./maphilight/jquery.maphilight.min.js"></script>
+<!-- Image Rwd Image Maps -->
+<script src="./jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"></script>
 <!-- Building hovers and clicks -->
 <script src="assets/js/floors.js"></script>
 </body>

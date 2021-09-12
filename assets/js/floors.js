@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(e){
     $('img[usemap]').maphilight( {
         fillColor: 'FBF5EB',
         fillOpacity: .7,
@@ -6,7 +6,7 @@ $(document).ready(function(){
         strokeOpacity: 1,
         strokeWidth: 1
     });
-    $('img[usemap]').imageMapResize();
+
 })
 function switchContent(obj) {
         obj = (!obj) ? 'sub1' : obj;

@@ -202,3 +202,18 @@ section.zgradaB {
   left: 50%;
   transform: translateX(-50%);
 }
+
+img[usemap] {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+ .buildingContainer h2 {
+   font-size: 28px;
+ }
+ .buildingContainer h4 {
+    font-size: 14px;
+ }
+}
