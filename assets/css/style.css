@@ -1479,7 +1479,7 @@ footer {
   width: 62px;
   transition: 0.3s;
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
   z-index: 1000;
   opacity: 0;

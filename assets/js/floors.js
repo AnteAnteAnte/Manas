@@ -6,7 +6,7 @@ $(document).ready(function(e){
         strokeOpacity: 1,
         strokeWidth: 1
     });
-
+    $("img[usemap").imageMapResize();
 })
 function switchContent(obj) {
         obj = (!obj) ? 'sub1' : obj;
