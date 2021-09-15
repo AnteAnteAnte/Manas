@@ -7,10 +7,10 @@
     <title>Testna Strainca</title>
 </head>
 <style>
-    img[usemap] {
+    img {
+        display: block;
         height: auto;
-        width: auto;
-        max-width: 100%;
+        max-width: 100%; 
     }
     .line {
         height: 4px;
@@ -20,9 +20,9 @@
 </style>
 <body>
     
-    <div class="image-wrapper" style="position: relative; width: 700px; height: 394px;">
+    <div class="image-wrapper">
             <img id="mapA" class="image-resize" usemap="#building-a"
-            alt="" width="700"
+            alt="" 
             style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;"
             src="assets/images/zgradaA.jpg" alt="">
             <canvas class="imw-canvas" width="700" ;
@@ -51,11 +51,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./maphilight/jquery.maphilight.min.js"></script>
     <script src="./image-map-resizer/js/imageMapResizer.min.js"></script>
+    <script src="./node_modules/image-map/dist/image-map.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-        $('img[usemap]').imageMapResize();
         $("img[usemap]").maphilight();
+
+        $("img[usemap]").rwdImageMap();
     });
+    //ImageMap("img[usemap]");
     </script>
 </body>
 </html>

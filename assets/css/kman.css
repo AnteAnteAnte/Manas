@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
 }
 
+#nav-icon2 span {
+    background-color: white!important;
+}
+
 section.zgradaA,
 section.zgradaB {
   display: flex;
