@@ -5,5 +5,7 @@
     <mapping directory="$PROJECT_DIR$/image-map-resizer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/imageMapWrapper" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/jQuery-rwdImageMaps" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jquery-map-trifecta" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/maphilight" vcs="Git" />
   </component>
 </project>

@@ -1,0 +1,110 @@
+<!-- Prizemlje -->
+
+                <div id="tab8" class="hide-2">
+                <div style="position: relative; width: 625.152px; height: 625px;">
+                    <img src="./assets/images/incoming/kman/zgradaB.png" usemap="#map-b-ground" alt="" width="625" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="625" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="625"></canvas>
+                    <map name="map-b-ground" style="cursor: pointer;">
+                        <area shape="poly" coords="232.19931428571425,89.30742857142856,444.7509942857142,137.53343999999998,415.2795428571428,265.24306285714283,266.1361371428571,230.4131657142857,281.31839999999994,165.21874285714284,218.80319999999998,150.03647999999998">
+                        <area shape="poly" coords="265.24306285714283,236.6646857142857,413.49339428571426,271.4945828571428,383.12886857142854,401.8834285714285,233.09238857142853,367.0535314285714"><area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
+                    </map>
+                </div>
+                    <a class="see-whole-building" href="#tab1">See Whole
+                        Building</a>
+                </div>
+            <!-- Prvi kat -->
+
+                <div id="tab7" class="hide-2">
+                <div style="position: relative; width: 625.152px; height: 625px;">
+                    <img src="./assets/images/incoming/kman/zgradaB.png" usemap="#map-b-ground" alt="" width="625" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="625" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="625"></canvas>
+                    <map name="map-b-ground" style="cursor: pointer;">
+                        <area shape="poly" coords="232.19931428571425,89.30742857142856,444.7509942857142,137.53343999999998,415.2795428571428,265.24306285714283,266.1361371428571,230.4131657142857,281.31839999999994,165.21874285714284,218.80319999999998,150.03647999999998">
+                        <area shape="poly" coords="265.24306285714283,236.6646857142857,413.49339428571426,271.4945828571428,383.12886857142854,401.8834285714285,233.09238857142853,367.0535314285714"><area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
+                    </map>
+                </div>
+                    <a class="see-whole-building" href="#tab1">See Whole
+                        Building</a>
+                </div>
+            <!-- Drugi kat -->
+
+                <div id="tab6" class="hide-2">
+                <div style="position: relative; width: 625.152px; height: 625px;">
+                    <img src="./assets/images/incoming/kman/zgradaB.png" usemap="#map-b-ground" alt="" width="625" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="625" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="625"></canvas>
+                    <map name="map-b-ground" style="cursor: pointer;">
+                        <area shape="poly" coords="232.19931428571425,89.30742857142856,444.7509942857142,137.53343999999998,415.2795428571428,265.24306285714283,266.1361371428571,230.4131657142857,281.31839999999994,165.21874285714284,218.80319999999998,150.03647999999998">
+                        <area shape="poly" coords="265.24306285714283,236.6646857142857,413.49339428571426,271.4945828571428,383.12886857142854,401.8834285714285,233.09238857142853,367.0535314285714"><area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
+                    </map>
+                </div>
+                    <a class="see-whole-building" href="#tab1">See Whole
+                        Building</a>
+                </div>
+            <!-- Treci kat -->
+
+                <div id="tab5" class="hide-2">
+                <div style="position: relative; width: 625.152px; height: 625px;">
+                    <img src="./assets/images/incoming/kman/zgradaB.png" usemap="#map-b-ground" alt="" width="625" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="625" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="625"></canvas>
+                    <map name="map-b-ground" style="cursor: pointer;">
+                        <area shape="poly" coords="232.19931428571425,89.30742857142856,444.7509942857142,137.53343999999998,415.2795428571428,265.24306285714283,266.1361371428571,230.4131657142857,281.31839999999994,165.21874285714284,218.80319999999998,150.03647999999998">
+                        <area shape="poly" coords="265.24306285714283,236.6646857142857,413.49339428571426,271.4945828571428,383.12886857142854,401.8834285714285,233.09238857142853,367.0535314285714"><area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
+                    </map>
+                </div>
+                    <a class="see-whole-building" href="#tab1">See Whole
+                        Building</a>
+                </div>
+            <!-- Cetvrti kat -->
+
+                <div id="tab4" class="hide-2">
+                <div style="position: relative; width: 625.152px; height: 625px;">
+                    <img src="./assets/images/incoming/kman/zgradaB.png" usemap="#map-b-ground" alt="" width="625" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="625" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="625"></canvas>
+                    <map name="map-b-ground" style="cursor: pointer;">
+                        <area shape="poly" coords="232.19931428571425,89.30742857142856,444.7509942857142,137.53343999999998,415.2795428571428,265.24306285714283,266.1361371428571,230.4131657142857,281.31839999999994,165.21874285714284,218.80319999999998,150.03647999999998">
+                        <area shape="poly" coords="265.24306285714283,236.6646857142857,413.49339428571426,271.4945828571428,383.12886857142854,401.8834285714285,233.09238857142853,367.0535314285714"><area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
+                    </map>
+                </div>
+                    <a class="see-whole-building" href="#tab1">See Whole
+                        Building</a>
+                </div>
+            <!-- Peti kat -->
+
+                <div id="tab3" class="hide-2">
+                <div style="position: relative; width: 625.152px; height: 625px;">
+                    <img src="./assets/images/incoming/kman/zgradaB.png" usemap="#map-b-ground" alt="" width="625" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="625" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="625"></canvas>
+                    <map name="map-b-ground" style="cursor: pointer;">
+                        <area shape="poly" coords="232.19931428571425,89.30742857142856,444.7509942857142,137.53343999999998,415.2795428571428,265.24306285714283,266.1361371428571,230.4131657142857,281.31839999999994,165.21874285714284,218.80319999999998,150.03647999999998">
+                        <area shape="poly" coords="265.24306285714283,236.6646857142857,413.49339428571426,271.4945828571428,383.12886857142854,401.8834285714285,233.09238857142853,367.0535314285714"><area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
+                    </map>
+                </div>
+                    <a class="see-whole-building" href="#tab1">See Whole
+                        Building</a>
+                </div>
+            <!-- Sesti kat -->
+                <div id="tab2" class="hide-2">
+                <div style="position: relative; width: 625.152px; height: 625px;">
+                    <img src="./assets/images/incoming/kman/zgradaB.png" usemap="#map-b-ground" alt="" width="625" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="625" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="625"></canvas>
+                    <map name="map-b-ground" style="cursor: pointer;">
+                        <area shape="poly" coords="232.19931428571425,89.30742857142856,444.7509942857142,137.53343999999998,415.2795428571428,265.24306285714283,266.1361371428571,230.4131657142857,281.31839999999994,165.21874285714284,218.80319999999998,150.03647999999998">
+                        <area shape="poly" coords="265.24306285714283,236.6646857142857,413.49339428571426,271.4945828571428,383.12886857142854,401.8834285714285,233.09238857142853,367.0535314285714"><area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
+                    </map>
+                </div>
+                    <a class="see-whole-building" href="#tab1">See Whole
+                        Building</a>
+                </div>
+            <!-- Sedmi kat -->
+                <div id="tab9" class="hide-2">
+                <div style="position: relative; width: 625.152px; height: 625px;">
+                    <img src="./assets/images/incoming/kman/zgradaB.png" usemap="#map-b-ground" alt="" width="625" style="position: absolute; top: 0px; left: 0px; z-index: 1; user-select: none;">
+                    <canvas width="625" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 2;" height="625"></canvas>
+                    <map name="map-b-ground" style="cursor: pointer;">
+                        <area shape="poly" coords="232.19931428571425,89.30742857142856,444.7509942857142,137.53343999999998,415.2795428571428,265.24306285714283,266.1361371428571,230.4131657142857,281.31839999999994,165.21874285714284,218.80319999999998,150.03647999999998">
+                        <area shape="poly" coords="265.24306285714283,236.6646857142857,413.49339428571426,271.4945828571428,383.12886857142854,401.8834285714285,233.09238857142853,367.0535314285714"><area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
+                    </map>
+                </div>
+                    <a class="see-whole-building" href="#tab1">See Whole
+                        Building</a>
+                </div>

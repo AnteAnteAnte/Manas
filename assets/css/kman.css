@@ -78,11 +78,16 @@ section.zgradaB {
   width: 70%;
 }
 
+.floorContainer {
+  position: relative;
+  width: 100%;
+}
+
 .floorContainer p {
   text-align: center;
 }
 
-.image-wrapper h2 {
+.image-wrapper-all h2 {
   position: absolute;
   z-index: 100;
   left: 25px;
@@ -207,9 +212,13 @@ section.zgradaB {
   transform: translateX(-50%);
 }
 
+.img_ID {
+  width: 100%;
+}
+
 img[usemap] {
-  height: auto;
   width: auto;
+  height: auto;
   max-width: 100%;
 }
 

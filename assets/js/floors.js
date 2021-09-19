@@ -1,45 +1,36 @@
-$(document).ready(function(e){
-    $('img[usemap]').maphilight( {
-        fillColor: 'FBF5EB',
-        fillOpacity: .7,
-        strokeColor: 'B2BEB5',
-        strokeOpacity: 1,
-        strokeWidth: 1
-    });
-    $("img[usemap").imageMapResize();
-})
-function switchContent(obj) {
-        obj = (!obj) ? 'sub1' : obj;
-        var contentDivs = document.getElementsByTagName('div');
-        for (i=0; i<contentDivs.length; i++) {
-            if (contentDivs[i].id && contentDivs[i].id.indexOf('sub') !== -1) {
-                contentDivs[i].className = 'hide';
+/*
+window.onload = function () {
+    $('img[usemap]').maphilight()
+    var ImageMap = function (map, img) {
+            var n,
+                areas = map.getElementsByTagName('area'),
+                len = areas.length,
+                coords = [],
+                previousWidth = 700;
+            for (n = 0; n < len; n++) {
+                coords[n] = areas[n].coords.split(',');
             }
-        }
-        document.getElementById(obj).className = '';
-    }
-    function checkTab() {
-        $('area').each(function() {
-            $(this).click(function() {
-                tab = $(this).attr('href').split('#');
-                console.log(tab)
-                switchContent(tab[1]);
-                $('.current').attr('class','');
-                $(this).attr('class','current');
-            });
-        });
-    }
-    function checkLink() {
-        $('a').each(function() {
-            $(this).click(function() {
-                tab = $(this).attr('href').split('#');
-                switchContent(tab[1]);
-                $('.current').attr('class','');
-                $(this).attr('class','current');
-            });
-        });
-    }
-    window.onload = function() {
-        checkTab();
-        checkLink();
-    };
+            this.resize = function () {
+                var n, m, clen,
+                    x = img.offsetWidth / previousWidth;
+                for (n = 0; n < len; n++) {
+                    clen = coords[n].length;
+                    for (m = 0; m < clen; m++) {
+                        coords[n][m] *= x;
+                    }
+                    areas[n].coords = coords[n].join(',');
+                }
+                previousWidth = document.body.clientWidth;
+                return true;
+            };
+            window.onresize = this.resize;
+        },
+        imageMap = new ImageMap(document.querySelector('.map_ID'), document.querySelector('.img_ID'));
+    imageMap.resize();
+    return;
+}
+*/
+$(document).ready(function() {
+
+    $("img[usemap]").rwdImageMaps();
+})

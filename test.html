@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+</style>
+<body>
+<div class="container">
+    <img class="img_ID" src="assets/images/incoming/kman/Manas-ZgradaB.jpg" usemap="#building-b" alt="">
+    <map class="map_ID" name="building-b" style="cursor: pointer;">
+        <area shape="poly" coords="270.3294,57.06954,362.44164,1.00122,543.66246,40.0488,543.66246,98.11956,362.44164,67.08174,270.3294,110.13419999999999">
+        <area shape="poly" coords="270.3294,110.13419999999999,362.44164,67.08174,543.66246,98.11956,543.66246,143.17446,362.44164,120.1464,270.3294,153.18666">
+        <area shape="poly" coords="270.3294,153.18666,362.44164,120.1464,543.66246,143.17446,543.66246,188.22935999999999,362.44164,173.21106,270.3294,196.23912">
+        <area shape="poly" coords="270.3294,196.23912,362.44164,173.21106,543.66246,188.22935999999999,543.66246,233.28426,362.44164,226.27572,270.3294,235.2867">
+        <area shape="poly" coords="270.3294,235.2867,362.44164,226.27572,543.66246,233.28426,543.66246,278.33916,362.44164,277.33794,270.3294,278.33916">
+        <area shape="poly" coords="270.3294,278.33916,362.44164,277.33794,543.66246,278.33916,543.66246,323.39406,362.44164,330.4026,270.3294,321.39162">
+        <area shape="poly" coords="270.3294,320.3904,349.42578,330.4026,520.6344,325.3965,520.6344,382.46604,349.42578,395.4819,270.3294,377.45994">
+    </map>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./maphilight/jquery.maphilight.min.js"></script>
+<script src="./imageMapWrapper/js/imageMapWrapper.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        $('img[usemap]').maphilight()
+        var ImageMap = function (map, img) {
+                var n,
+                    areas = map.getElementsByTagName('area'),
+                    len = areas.length,
+                    coords = [],
+                    previousWidth = 700;
+                for (n = 0; n < len; n++) {
+                    coords[n] = areas[n].coords.split(',');
+                }
+                this.resize = function () {
+                    var n, m, clen,
+                        x = img.offsetWidth / previousWidth;
+                    for (n = 0; n < len; n++) {
+                        clen = coords[n].length;
+                        for (m = 0; m < clen; m++) {
+                            coords[n][m] *= x;
+                        }
+                        areas[n].coords = coords[n].join(',');
+                    }
+                    previousWidth = document.body.clientWidth;
+                    return true;
+                };
+                window.onresize = this.resize;
+            },
+            imageMap = new ImageMap(document.querySelector('.map_ID'), document.querySelector('.img_ID'));
+        imageMap.resize();
+        return;
+    }
+</script>
+
+</body>
+</html>
