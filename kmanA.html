@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/kman.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
+    <title>Projekti u izgradnji - Kman</title>
+</head>
+<main>
+    <button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button>
+    <header class="kman-header" style="background: #181717;">
+        <nav>
+            <a class="logo" href="index.html">
+                <img class="logi" src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <div class="hamburger" onclick="animateIcon()">
+                <div id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="overlay">
+            <ul class="links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="projekti.html">Projekti</a></li> 
+                <li><a href="kman.html">U izgradnji</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <h1 class="head-title">Kman</h1>
+    <section class="zgradaA">
+        <div class="buildingContainer">
+            <h2>Zgrada A</h2>
+            <h4>Projektom Kman predviđena je izgradnja dva stambena objekta u zapadnom dijelu istoimenog naselja
+                <br>
+                Dobra prometna povezanost, blizina osnovne škole, ambulante, tržnice i društvenih sadržaja poput
+                trgovačkog centra Joker čine lokaciju projekta Kman iznimno atraktivnom.
+            </h4>
+            <h3>Legenda</h3>
+            <div class="status-wrapper">
+                <div class="sell">
+                    <p>prodan</p>
+                    <div class="red-sell"></div>
+                </div>
+                <div class="free">
+                    <p>slobodan</p>
+                    <div class="green-free"></div>
+                </div>
+            </div>
+            <button onclick="location.href" class="learn-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">See PDF</span>
+            </button>
+        </div>
+
+
+        <div class="floorContainer">
+            <div class="image-wrapper-all" id="sub1">
+                    <h2>Zgrada A</h2>
+                    <img class="img_ID"  usemap="#building-a" src="assets/images/incoming/kman/zgradaA.svg" alt="">
+                    <map class="map_ID"  name="building-a" style="cursor: pointer;">
+                        <area href="#" shape="poly" coords="242,145,357,115,547,147,547,188,357,165,242,188" alt="areas-on-building">
+                        <area href="#" shape="poly" coords="242,105,357,65,547,106,547,147,357,115,242,145" alt="areas-on-building">
+                        <area href="#" shape="poly" coords="242,53,357,0,547,53,547,106,357,65,242,105" alt="areas-on-building">
+                        <area href="#" shape="poly" coords="242,188,357,165,547,188,547,228,357,215,242,228" alt="areas-on-building">
+                        <area href="#" shape="poly" coords="242,228,357,215,547,228,547,270,357,265,242,270" alt="areas-on-building">
+                        <area href="#" shape="poly" coords="242,270,357,265,547,270,547,310,357,315,242,310" alt="areas-on-building">
+                        <area href="./katovihtml/zgradaA/prizemlje.html" shape="poly" coords="242,310,357,315,547,310,547,355,357,367,242,352" alt="areas-on-building">
+                    </map>
+                    <ul class="floorsNumbers">
+                        <li><a href="#">06</a></li>
+                        <li><a href="#">05</a></li>
+                        <li><a href="#">04</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">01</a></li>
+                        <li><a href="#">00</a></li>
+                    </ul>
+                </div>
+                <p>Pređite preko slike za prikaz dostupnih stanova te kliknite na željeni stan da vizualizirate željeni
+                    izgled vašeg budućeg stana</p>
+            </div>
+    </section>
+
+    <section class="image-building-slider">
+        <h1 class="head-title">Galerija</h1>
+        <div class="slider" style="display:flex; justify-content: space-around">
+            <div class="first-pic">
+                <img src="assets/images/incoming/kman/kman-galerija.jpg" alt="">
+            </div>
+            <div class="second-pic">
+                <img src="assets/images/incoming/kman/kman-galerija2.jpg" alt="">
+            </div>
+            <div class="third-pic">
+                <img src="assets/images/incoming/kman/kmangalerija3.jpg" alt="">
+            </div>
+            <div class="fourth-pic">
+                <img src="assets/images/incoming/kman/kman-galeija4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projektni tim i mapa -->
+
+    <section class="people-and-map">
+        <div class="people">
+            <div>
+                <p class="people-title">Tlocrtna površina</p>
+                <p class="peple-stats">85720 m2</p>
+            </div>
+
+            <div>
+                <p class="people-title">Nadmorska visina</p>
+                <p class="peple-stats">7,45m</p>
+            </div>
+
+            <div>
+                <p class="people-title">Klijent</p>
+                <p class="peple-stats">Guangzhou Lingnan International Enterprise Group Co.Ltd</p>
+            </div>
+
+            <div>
+                <p class="people-title">Autor</p>
+                <p class="peple-stats">3LHD</p>
+            </div>
+
+            <div>
+                <p class="people-title">Projektni tim</p>
+                <p class="peple-stats">Saša Begović, Marko Dabrović, Tatjana Grozdanić Begović, Silvije Novak, Kristina
+                    Marković, Viktorija Jagodić, Uršula Juvan, Nives Krsnik Rister, Luka Krstulović, Nevena Kuzmanić,
+                    Leon Lazaneo, Ana Mikelić, Maša Milovac, Iva Peručić, Tomislav Soldo, Krunoslav Szoersen, Dragana
+                    Šimić, Deša Ucović, Dijana Vandekar</p>
+            </div>
+
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446.4777162514124!2d16.474340348655517!3d43.5241220891927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355e45c4b87fed%3A0xa8447eafceaa54d4!2sSarajevska%20ul.%2046e%2C%2021000%2C%20Split!5e0!3m2!1shr!2shr!4v1626696574438!5m2!1shr!2shr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <div class="contact-for-buying">
+        <h3>Za prodaju stanova <span><a href="contact.php">kontaktirajte nas.</a></span></h3>
+    </div>
+
+    <!-- Footer -->
+
+    <section class="tenten">
+        <section class="button123">
+            <div class="container123">
+                <div class="card123">
+                    <div class="face face1">
+                        <div class="content">
+                            <img class="nigs"
+                                src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                            <h3 class="nigs">Stanovi</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p></p>
+                            <a href="#">Projekti</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="sixth">
+        <div class="container6">
+            <div class="livo">
+                <div class="row1">
+                    <img class="logoFooter" src="assets/images/logo.svg" alt="">
+                    <p class="pFooter">Copyright 2021 Handcrafter by AIV</p>
+                </div>
+                <div class="row4">
+                    <img class="linked" src="assets/images/linkedin.svg" alt="">
+                </div>
+                <div class="row11">
+                    <a class="pFooter1">Copyright 2021 Handcrafter by <a class="aiv" href="#">AIV</a> </a>
+                </div>
+            </div>
+            <div class="row2">
+                <ul class="ulFooter">
+                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
+                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
+                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
+                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
+                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
+                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
+                </ul>
+            </div>
+            <div class="ela">
+                <div class="test"></div>
+            </div>
+            <div class="row3">
+                <ul class="ulFooter1">
+                    <li class="mailFooter"><a class="mailFooter" href="#">ante@manas.hr</a></li>
+                    <li class="brojFooter"><a class="brojFooter" href="#">091 1247 421</a></li>
+                    <li class="footertekstp"><a class="footertekstp">Osjecka 5 b</a></li>
+                    <li class="footertekstp"><a class="footertekstp">21000 Split</a></li>
+                </ul>
+            </div>
+            <div class="livo">
+                <div class="row5">
+                    <a class="pFooter1">Copyright 2021 Handcrafter by <a class="aiv" href="#">AIV</a> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="twobuttons">
+        <div class="container10">
+            <div class="kontakt10">
+                <div class="kontakt11">
+                    <a href="#" class="kontakt13">
+                        <img src="assets/images/pismo.svg" alt="" class="kontakt69">
+                    </a>
+                </div>
+                <div class="kontakt12">
+                    <a href="#" class="kontakt14">Kontakt</a>
+                </div>
+            </div>
+            <div class="projekti10">
+                <div class="projekti11">
+                    <a href="#" class="kontakt13">
+                        <img src="assets/images/crane.svg" alt="" class="kontakt15">
+                    </a>
+                </div>
+                <div class="projekti12">
+                    <a href="#" class="kontakt14">Projekti</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-col">
+        <ul>
+            <li><a href="#">Osjecka 5 b</a></li>
+            <li><a href="#">Osjecka 5 b</a></li>
+            <li><a href="#">Osjecka 5 b</a></li>
+            <li><a href="#">Osjecka 5 b</a></li>
+        </ul>
+    </div>
+</main>
+
+
+<script type="module">
+    var slide = tns({
+        container: ".slider",
+        items: 1,
+        swipeAngle: false,
+        speed: 400,
+        autoplay: false,
+        mouseDrag: true,
+        nav: true,
+        controls: false
+    })
+
+    slider.goTo(3);
+    slider.goTo('prev');
+    slider.goTo('next');
+    slider.goTo('first');
+    slider.goTo('last');
+
+    document.querySelector('.gallery-button-prev').onclick = function () {
+        slider.goTo('prev');
+    };
+    document.querySelector('.gallery-button-next').onclick = function () {
+        slider.goTo('next')
+    }
+</script>
+<!-- Main Javascript File -->
+<script src="assets/js/main.js"></script>
+<!-- Polyfill JS -->
+<script src="https://cdn.rawgit.com/inexorabletash/polyfill/$TAGNAME/polyfill.min.js"></script>
+<!-- Jquery Script
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ Tag -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Tiny Slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Maphilight -->
+<script src="./maphilight/jquery.maphilight.js"></script>
+<script src="./maphilight/jquery.maphilight.min.js"></script>
+<!-- Building hovers and clicks -->
+<script src="assets/js/floors.js"></script>
+</body>
+
+</html>

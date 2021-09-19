@@ -1,23 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Testna Strainca</title>
 </head>
 <style>
     .container {
         position: relative;
         width: 100%;
     }
-
     img {
         width: 100%;
     }
 </style>
 <body>
+
 <div class="container">
     <img class="img_ID" src="assets/images/incoming/kman/Manas-ZgradaB.jpg" usemap="#building-b" alt="">
     <map class="map_ID" name="building-b" style="cursor: pointer;">
@@ -31,12 +30,14 @@
     </map>
 </div>
 
+<a href="test2.html">Klikni da vidis drugu zgradu</a>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./maphilight/jquery.maphilight.min.js"></script>
-<script src="./imageMapWrapper/js/imageMapWrapper.min.js"></script>
+<script src="./node_modules/image-map-wrapper/js/imageMapWrapper.min.js"></script>
 <script type="text/javascript">
     window.onload = function () {
-        $('img[usemap]').maphilight()
+    $('img[usemap]').maphilight();
         var ImageMap = function (map, img) {
                 var n,
                     areas = map.getElementsByTagName('area'),

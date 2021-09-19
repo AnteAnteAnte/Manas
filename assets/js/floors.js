@@ -1,4 +1,3 @@
-/*
 window.onload = function () {
     $('img[usemap]').maphilight()
     var ImageMap = function (map, img) {
@@ -29,8 +28,4 @@ window.onload = function () {
     imageMap.resize();
     return;
 }
-*/
-$(document).ready(function() {
 
-    $("img[usemap]").rwdImageMaps();
-})
