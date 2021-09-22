@@ -78,11 +78,6 @@ section.zgradaB {
   width: 70%;
 }
 
-.floorContainer {
-  position: relative;
-  width: 100%;
-}
-
 .floorContainer p {
   text-align: center;
 }
@@ -96,9 +91,10 @@ section.zgradaB {
 
 .floorsNumbers {
   position: absolute;
+  top: 14%;
+  right: 14%;
   z-index: 10;
-  right: 100px;
-  top: 55px;
+  
 }
 
 .floorNumberB {
@@ -116,7 +112,6 @@ section.zgradaB {
 
 .tns-nav {
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -212,14 +207,22 @@ section.zgradaB {
   transform: translateX(-50%);
 }
 
-.img_ID {
-  width: 100%;
+.image-wrapper-all {
+  position: relative;
+  max-width: 700px;
 }
 
-img[usemap] {
-  width: auto;
-  height: auto;
-  max-width: 100%;
+.img_ID {
+  width: 700px;
+}  
+
+.slider div img {
+  max-width: 900px;
+}
+
+.floorContainer p {
+  text-align: center;
+  margin: auto;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -229,6 +232,62 @@ img[usemap] {
  .buildingContainer h4 {
     font-size: 14px;
  }
+  .img_ID { 
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .img_ID {
+    width: 500px;
+  }
+  .floorsNumbers {
+    top: 11%;
+  }
+  .floorsNumbers li {
+    padding: 0.2rem;
+  }
+  .floorsNumbers li a {
+    font-size: 14px;
+  }
+  .people-and-map {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .people {
+    margin-bottom: 40px;
+  }
+  .people div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .buildingContainer {
+    margin-bottom: 50px;
+  }
+  .zgradaA, .zgradaA {
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .image-building-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .head2 {
+    padding: 0;
+  }
+  .slider div img {
+    width: 500px;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -284,3 +343,7 @@ section.main h1 {
   top: 45%;
   right: 20%;
 }
+
+#map img {
+  width: 100%;
+} 

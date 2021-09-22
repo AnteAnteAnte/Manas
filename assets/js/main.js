@@ -1,3 +1,31 @@
+const accordion = document.querySelector('.accordion');
+const items = document.querySelectorAll('.accordion__item');
+
+
+items.forEach((item) => {
+  const title = item.querySelector('.accordion__title');
+  
+  title.addEventListener('click', (e) => {
+    const opened_item = accordion.querySelector('.is-open');
+    
+    // Toggle trenutni item
+    toggle_item(item);     
+  });
+});
+
+const toggle_item = (item) => {
+  const body = item.querySelector('.accordion__body');
+  const content = item.querySelector('.accordion__content');
+        
+  if (item.classList.contains('is-open')) {
+    body.removeAttribute('style');
+    item.classList.remove('is-open');
+  }else {
+    body.style.height = body.scrollHeight + 'px';
+    item.classList.add('is-open');
+  }
+}
+
 //Get the button:
 let mybutton = document.getElementById("mybtn");
 
@@ -120,6 +148,7 @@ sliderBtnLeft.addEventListener("click", () => {
 })
 
 startSlider();
+
 
 
 
