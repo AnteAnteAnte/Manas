@@ -1,45 +1,47 @@
-<?php
-
+ <?php
 use PHPMailer\PHPMailer\PHPMailer;
 
-require_once "PHPMailer/Exception.php";
-require_once "PHPMailer/PHPMailer.php";
-require_once "PHPMailer/SMTP.php";
+require_once 'phpmailer/Exception.php';
+require_once 'phpmailer/PHPMailer.php';
+require_once 'phpmailer/SMTP.php';
 
 $mail = new PHPMailer(true);
 
-$alert = "";
+$alert = '';
 
-if(isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['mail'];
-    $message = $_POST['message'];
+if(isset($_POST['submit'])){
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-    try{
-        $mail->isSMTP();
-        $mail->Host = ""; #domena ili mail.domena.com
-        $mail->SMTPAuth = true;
-        $mail->Username = ""; #vaš host email račun koji koristite kao SMTP server
-        $mail->Password = ""; #vaš host šifra email računa
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587; #može biti i 465iti i ssl
+  try{
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'viktor@gmail.com'; // Gmail address which you want to use as SMTP server
+    $mail->Password = 'emailšifra'; // Gmail address Password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = '587';
 
-        $mail->setFrom(""); #vaš host email račun koji koristite kao SMTP server
-        $mail->addAddress(""); #email adresa gdje želite primati emailove
+    $mail->setFrom('youremail@gmail.com'); // Gmail address which you used as SMTP server
+    $mail->addAddress('youranyemail@gmail.com'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
 
-        $mail->isHTML(true);
-        $mail->Subject = "Poruka zaprimljena (Contact Page)";
-        $mail->send();
-        $alert = "<div class='alert-success'>
-                    <span>Poruka poslana! Hvala što ste nas kontaktirali.</span>
-                  </div>";
-    } catch (Exception $e) {
-        $alert = '<div class="alert-error">
-                    <span>".$e->getMessage()."</span>
-                  </div>';
-    }
+    $mail->isHTML(true);
+    $mail->Subject = 'Message Received (Contact Page)';
+    $mail->Body = "<h3>Name : $name <br>Email: $email <br>Message : $message</h3>";
+
+    $mail->send();
+    $alert = '<div class="alert-success">
+                 <span>Message Sent! Thank you for contacting us.</span>
+                </div>';
+  } catch (Exception $e){
+    $alert = '<div class="alert-error">
+                <span>'.$e->getMessage().'</span>
+              </div>';
+  }
 }
-
+?>
+      
 
 
 

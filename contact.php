@@ -12,8 +12,10 @@
     <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
     <title>Kontakt</title>
 </head>
-
 <body>
+    <!--alert messages start-->
+    <?php echo $alert; ?>
+    <!--alert messages end-->
     <button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button>
     <header class="kontakt-header">
         <nav>
@@ -60,15 +62,15 @@
             <div class="phone-mail-location">
                 <div class="phone">
                     <h3>Telefon</h3>
-                    <p>+ 385 98 323 233</p>
+                    <p style="color: white">+ 385 98 323 233</p>
                 </div>
                 <div class="email">
                     <h3>Email</h3>
-                    <p>manas@gmail.com</p>
+                    <p style="color: white">manas@gmail.com</p>
                 </div>
                 <div class="location">
                     <h3>Lokacija</h3>
-                    <p>Sarajevska 46E, 21000 Split</p>
+                    <p style="color: white">Sarajevska 46E, 21000 Split</p>
                 </div>
             </div>
         </div>

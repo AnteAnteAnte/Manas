@@ -52,8 +52,8 @@
     <section class="main">
         <h1>Prizemlje</h1>
         <div class="container" style="position: relative;">
-            <div id="map">
-                <img class="img_ID" src="../../assets/images/incoming/kman/prizemlje.png" usemap="map-b-ground" alt=""/>
+            <div id="map2">
+                <img class="img_ID" src="../../assets/images/incoming/kman/prizemlje.png" usemap="#map-b-ground" alt=""/>
             </div>
             <!--
             <div class="nums">
@@ -63,20 +63,21 @@
             </div>
             -->
            <map class="map_ID" name="map-b-ground" style="cursor: pointer;">
-                <area shape="poly" coords="117.8858057142857,345.61974857142854,381.34271999999993,408.13494857142854,350.97819428571427,537.6307199999999,86.6282057142857,475.11551999999995">
-                <area shape="poly" coords="260.3172,100.122,498.60756,154.18788,465.5673,297.36234,298.36356,258.31476,315.3843,185.2257,245.2989,168.20496">
+            <area shape="poly" coords="260.4683714285714,100.18014285714285,498.8971114285714,154.27741999999998,465.83766428571425,297.53502428571426,298.53682571428567,258.4647685714286,315.56745,185.33326428571428,245.44134999999997,168.30264">
+            <area  shape="poly" coords="297.53502428571426,265.4773785714286,463.8340614285714,304.54763428571425,429.7728128571428,450.81064285714285,261.4701728571428,411.7403871428571">
+            <area data-maphilight='{"fillColor":"00ff47","fillOpacity":0.6, "strokeColor": "00ff47"}'  shape="poly" coords="132.23778857142855,387.69715285714284,427.76921,457.82325285714285,393.7079614285714,603.0844599999999,97.17473857142856,532.95836">
             </map>
         </div>
         <p>Prijeđite preko te kliknite na željeni stan da vidite više o njemu</p>
         <div class="legend">
-            <h2>A01</h2>
+            <h2>B01</h2>
             <div class="red-sell"></div>
-            <h2>A02</h2>
+            <h2>B02</h2>
             <div class="red-sell"></div>
-            <h2>A03</h2>
-            <div class="red-sell"></div>
+            <h2>B03</h2>
+            <div class="green-free"></div>
         </div>
-        <a class="see-whole-building" href="../../kmanA.html">See Whole Building</a>
+        <a class="see-whole-building" href="../../kmanB.html">See Whole Building</a>
 
     </section>
 
@@ -190,17 +191,18 @@
 <script type="text/javascript">
 
 window.onload = function () {
-    $('img[usemap]').maphilight({
+    
+     $('img[usemap]').maphilight({
         fill: true,
         fillColor: 'ff0000',
-        fillOpacity: 1,
+        fillOpacity: .6,
         stroke: true,
         strokeColor: 'ff0000',
         strokeOpacity: 1,
         strokeWidth: 1,
         fade: true,
         alwaysOn: false 
-    })
+    }) 
     var ImageMap = function (map, img) {
             var n,
                 areas = map.getElementsByTagName('area'),
