@@ -38,7 +38,7 @@
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="projekti.html">Projekti</a></li>
                 <li><a href="#">U izgradnji</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
+                <li><a style="color: #b23838;" href="contact.php">Contact Us</a></li>
             </ul>
         </div>
     </header>
