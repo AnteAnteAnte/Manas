@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 #nav-icon2 span {
     background-color: white !important;
 }
@@ -441,7 +445,17 @@ section.zgradaB {
         padding-left: 0;
     }
 }
-
+@media only screen and (max-width: 321px) {
+    section.zgradaA, .head-title {
+        padding-left: 20px;
+    }
+    .image-wrapper-all {
+        width: 270px;
+    }
+    .floorsNumbers li a {
+        font-size: 12px;
+    }
+}
 /* Stanovi */
 
 section.main {
