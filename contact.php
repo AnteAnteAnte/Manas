@@ -48,7 +48,7 @@
             <form action="sendmail.php" method="post">
                 <input type="text" name="name" value="" placeholder="Ime i Prezime">
                 <input type="email" name="mail" value="" placeholder="Email">
-                <textarea name="message" type="text" placeholder="Poruka" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" type="text" placeholder="Poruka" id="textarea" cols="30" rows="10"></textarea>
                 <button type="submit" name="submit">Pošalji</button>
             </form>
         </div>
@@ -76,8 +76,6 @@
         </div>
     </section>
     <section class="tenten">
-
-
         <section class="button123">
             <div class="container123">
                 <div class="card123">
@@ -95,14 +93,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
     </section>
-
-
-
 
     <section class="sixth">
         <div class="container6">
@@ -126,9 +119,7 @@
                     <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
                     <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
                     <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
-
                 </ul>
-
             </div>
             <div class="ela">
                 <div class="test"></div>
