@@ -72,8 +72,8 @@ const sliderHeadingFour = document.querySelector(".slider--heading-four");
 const sliderImage = [
   {
     src: "assets/images/dnevni-boravak.png",
-    heading: "Ez Bro",
-    headingFour: "Lorem ipsum dolorem ups andse",
+    heading: "Mertojak",
+    headingFour: "Izgradnja novih stanova",
   },
   {
     src: "assets/images/buildings.png",

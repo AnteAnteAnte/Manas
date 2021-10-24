@@ -1804,3 +1804,7 @@ p {
 .active-color {
   color: #b23838;
 }
+
+.middle p {
+  color: white;
+}
