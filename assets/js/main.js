@@ -62,6 +62,7 @@ hamburger.addEventListener("click", () => {
   }
 }); 
 
+
 const sliderContainer = document.querySelector("header");
 const sliderBtnLeft = document.querySelector(".slider--btn-left");
 const sliderBtnRight = document.querySelector(".slider--btn-right");
@@ -72,7 +73,7 @@ const sliderHeadingFour = document.querySelector(".slider--heading-four");
 const sliderImage = [
   {
     src: "assets/images/dnevni-boravak.png",
-    heading: "Građevina",
+    heading: "Mertojak",
     headingFour: "Izgradnja novih stanova",
   },
   {
@@ -92,7 +93,6 @@ let slideCounter = 0;
 
 const startSlider = () => {
   sliderContainer.style.backgroundImage =
-   
   `url(${sliderImage[0].src})`;
   sliderHeading.innerHTML = sliderImage[0].heading;
   sliderHeadingFour.innerHTML = sliderImage[0].headingFour;
@@ -111,6 +111,7 @@ sliderBtnRight.addEventListener("click", () => {
             sliderContainer.classList.remove("fadeIn")
         }, 1000)
     }
+
     sliderContainer.style.backgroundImage = `
     url(${sliderImage[slideCounter + 1].src})`;
     sliderHeading.innerHTML = sliderImage[slideCounter + 1].heading;
@@ -120,13 +121,13 @@ sliderBtnRight.addEventListener("click", () => {
     setTimeout(() => {
         sliderContainer.classList.remove("fadeIn");
         sliderHeading.classList.remove("fadeIn")
-    }, 1000) 
+    }, 1000)
 });
 
 sliderBtnLeft.addEventListener("click", () => {
     if (slideCounter === sliderContainer.length) {
         sliderContainer.style.backgroundImage = `
-        url(${slierImage[-1].src})`;
+        url(${sliderImage[-1].src})`;
         sliderHeading.innerHTML = sliderImage[0].heading;
         sliderHeadingFour.innerHTML = sliderImage[0].headingFour;
         slideCounter = 0;
@@ -148,6 +149,8 @@ sliderBtnLeft.addEventListener("click", () => {
 })
 
 startSlider();
+
+
 
 
 

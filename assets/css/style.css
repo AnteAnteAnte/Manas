@@ -393,12 +393,27 @@ section {
   padding-left: 75px;
 }
 a {
-  color: var(--primary-color);
+  color: var(--primary-color1);
 }
 
 .h2Text {
+  position: relative;
   font-size: 30px;
+  width: max-content;
+  margin: auto;
 }
+
+.h2Text::after {
+  content: "";
+  background: var(--primary-color1);
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  border-radius: 8px;
+  bottom: -4px;
+  right: -4px;
+}
+
 .test2 {
   background: var(--primary-color1);
   width: 110px;
@@ -626,7 +641,7 @@ a {
   padding-top: 10px;
 }
 .mailFooter {
-  color: var(--primary-color);
+  color: var(--primary-color1);
 }
 .brojFooter {
   color: white;
@@ -984,7 +999,6 @@ section.third {
 }
 .grass svg {
   animation: skew 2s infinite;
-  transform: skew;
   animation-direction: alternate;
 }
 @keyframes skew {
@@ -1156,9 +1170,6 @@ section.third {
   .leftSide55 {
     margin-left: 5%;
   }
-  .zavrseni {
-    padding-left: 80px;
-  }
   .position15 {
     padding-left: 370px;
   }
@@ -1183,12 +1194,17 @@ section.third {
   margin: auto;
 }
 @media only screen and (max-width: 696px) {
+  .h2Tekst {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   section.third {
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .carousel-slider--all {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .hamburger {
     transform: scale(0.5);
@@ -1224,7 +1240,6 @@ section.third {
   }
   .slider--btn-left img:hover,
   .slider--btn-right img:hover {
-    background-color: none;
     width: 40px;
     height: 40px;
   }
@@ -1515,10 +1530,6 @@ section.third {
 }
 .position999 {
   padding-left: 190px;
-}
-.containerText {
-  max-width: 300px;
-  margin: auto;
 }
 footer {
   display: flex;
@@ -1818,7 +1829,7 @@ p {
     height: auto;
   }
   .botun {
-    padding-left: 10px 30px;
+    padding: 10px 30px;
   }
   .what {
     width: 100%;
