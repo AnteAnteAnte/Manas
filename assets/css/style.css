@@ -1567,6 +1567,10 @@ footer {
   transform: scale(1.05);
 }
 
+.people {
+  display: flex;
+}
+
 /* U izgradnji Kman */
 
 .buildingsContainer {
@@ -1743,6 +1747,7 @@ div[class*="box"] {
   font-size: 16px;
   padding: 30px 80px;
   transition: 0.3s;
+  border-radius: 8px;
 }
 .botun:hover {
   transform: scale(1.25);
@@ -1834,4 +1839,14 @@ p {
   .what {
     width: 100%;
   }
+}
+
+.pic1 {
+  position: relative;
+}
+
+.pic1 p {
+  color: white;
+  position: absolute;
+  left: 5%;
 }
