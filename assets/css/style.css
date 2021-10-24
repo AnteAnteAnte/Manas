@@ -865,6 +865,7 @@ section.third {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border-width: 5px 0px 5px 5px;
+  height: 100%;
 }
 
 .learn-more {
@@ -1805,6 +1806,21 @@ p {
   color: #b23838;
 }
 
-.middle p {
-  color: white;
+.pic1 img {
+  width: 500px;
+  height: 339px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 560px) {
+  .pic1 img {
+    width: 100%;
+    height: auto;
+  }
+  .botun {
+    padding-left: 10px 30px;
+  }
+  .what {
+    width: 100%;
+  }
 }

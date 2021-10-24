@@ -72,19 +72,19 @@ const sliderHeadingFour = document.querySelector(".slider--heading-four");
 const sliderImage = [
   {
     src: "assets/images/dnevni-boravak.png",
-    heading: "Mertojak",
+    heading: "Građevina",
     headingFour: "Izgradnja novih stanova",
   },
   {
     src: "assets/images/buildings.png",
-    heading: "You are my son",
+    heading: "Dizajn Stanova",
     headingFour:
-      "Lorem ipsum dolorem ups andse",
+      "Dizajniramo vaše stanove baš onakve kakve želite",
   },
   {
     src: "assets/images/kuhinja.png",
-    heading: "Manas buildings",
-    headingFour: "We create minecraft buldings",
+    heading: "Team",
+    headingFour: "Surađujemo sa raznim firmama i voljni smo upoznati vaše projekte",
   }
 ];
 
