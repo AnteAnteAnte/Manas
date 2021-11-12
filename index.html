@@ -50,63 +50,22 @@
                 <li><a href="contact.php">Contact Us</a></li>
             </ul>
         </div>
-        <section class="background-img-gallery">
-          <div class="header-section">
-
-            <div class="house img1">
-              <h1 class="slider-heading">Mertojak</h1>
-              <h4 class="heading-four">Izgradnja novih stanova</h4>
+        <div class="slider--content">
+            <div class="slider--feature">
+                <h1 class="slider--heading"></h1>
+                <h4 class="slider--heading-four"></h4>
+                <button onclick="location.href='projekti.html'">Projekti</button>
             </div>
-
-            <div class="house img2">
-              <h1 class="slider-heading">Dizajn Stanova</h1>
-              <h4 class="heading-four">Dizajniramo stanove kakve želite</h4>
+            <div class="buttons">
+                <button class="slider--btn-left">
+                    <img src="assets/images/arrowLeft.svg" alt="left-arrow">
+                </button>
+                <button class="slider--btn-right">
+                    <img  src="assets/images/arrowRight.svg" alt="right-arrow">
+                </button>
             </div>
-
-            <div class="house img3">
-              <h1 class="slider-heading">Team</h1>
-              <h4 class="heading-four">Surađujemo sa raznim firmama i voljni smo upoznati vaše projekte</h4>
-            </div>
-
-          </div>
-          <div class="buttons buttons-req">
-          <button class="prev-button-first">
-            <img src="assets/images/arrowLeft.svg" alt="left-arrow" />
-          </button>
-          <button class="next-button-first">
-            <img src="assets/images/arrowRight.svg" alt="right-arrow" />
-          </button>
         </div>
-        </section>
     </header>
-    <section class="second">
-        <div class="container3">
-            <div class="leftSide1">
-                <div class="containerText">
-                    <div class="position2">
-                    <h2 class="h2Text">Gradnja i oprema</h2>
-                    </div>
-                </div>
-                <div class="pardiv">
-                <p class="par2">Tvrtka Manas d.o.o. osnovana je 1990. godine u Splitu i djeluje kao investitor u projektima stambeno-poslovne izgradnje, u segmentima djelatnosti kao što su odabir parcele i ishođenje svih potrebnih dozvola, vođenje projekta, organizacija gradnje i u konačnici, prodaja stambenih i poslovnih prostora.</p>
-                </div>
-                <div class="sidebyside12">
-                <div class="sideByside">
-                       <button onclick="location.href='projekti.html'" class="learn-more">
-                            <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                            </span>
-                            <span class="button-text">Learn More</span>
-                        </button>
-                </div>
-                </div>
-            </div>
-            <div class="rightSide1">
-                <img class="ajajaj" src="assets/images/Final%20Ilustration.svg" alt="">
-            </div>
-        </div>
-    </section>
-
     <section class="third">
         <div class="leftSide55">
         <h1 class="zavrseni h2Text">Završeni projekti i u izgradnji</h1>
@@ -397,24 +356,6 @@
     </section>
 </main>
 <script type="module">
-let slider1 = tns({
-   container: ".header-section",
-   sideBy: "page",
-   autoHeight: true,
-   items: 1,
-   swipeAngle: false,
-   speed: 400,
-   autoplay: false,
-   controls: false,
-   nav: false,
-   mouseDrag: true,
-});
-slider1.goTo(3);
-slider1.goTo("prev");
-slider1.goTo("next");
-slider1.goTo("first");
-slider1.goTo("last");
-
 let slider = tns({
     container: '.my-slider',
     items: 3,
@@ -426,20 +367,7 @@ let slider = tns({
     controls: false,
     nav: false,
     mouseDrag: true,
-});
-slider.goTo(3);
-slider.goTo('prev');
-slider.goTo('next');
-slider.goTo('first');
-slider.goTo('last');
-
-document.querySelector(".prev-button-first").onclick = function () {
-  slider1.goTo("prev");
-};
-document.querySelector(".next-button-first").onclick = function () {
-  slider1.goTo("next");
-};
-
+}); 
 document.querySelector('.prev-button').onclick = function () {
     slider.goTo('prev');
 };
