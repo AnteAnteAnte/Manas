@@ -33,6 +33,20 @@ body {
   font-family: "Poppins_Regular";
 }
 
+.main-nav {
+  transition: 0.5s ease-out;
+}
+
+.fixedNav {
+  position: fixed;
+  top: 0;
+  background: #181717;
+  width: 100%;
+  margin: 0;
+  z-index: 1000;
+  transition: 0.5s ease-out;
+}
+
 .accordion__item {
   margin-bottom: 5px;
 }
@@ -116,7 +130,7 @@ body {
   position: absolute;
   height: 5px;
   width: 50%;
-  background: var(--primary-color1);
+  background: white;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -202,7 +216,7 @@ body {
 .overlay {
   height: 100%;
   width: 0%;
-  position: fixed;
+  position: fixed!important;
   z-index: 900;
   right: 0;
   top: 0;
