@@ -36,10 +36,10 @@
         </nav>
         <div class="overlay">
             <ul class="links">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Naslovnica</a></li>
                 <li><a href="projekti.html">Projekti</a></li>
                 <li><a href="#">U izgradnji</a></li>
-                <li><a style="color: #b23838;" href="contact.php">Contact Us</a></li>
+                <li><a style="color: #b23838;" href="contact.php">Kontaktirajte Nas</a></li>
             </ul>
         </div>
     </header>
@@ -129,7 +129,7 @@
                 <ul class="ulFooter1">
                     <li class="mailFooter"><a class="mailFooter" href="#">ante@manas.hr</a></li>
                     <li class="brojFooter"><a class="brojFooter" href="#">091 1247 421</a></li>
-                    <li class="footertekstp"><a class="footertekstp">Osjecka 5 b</a></li>
+                    <li class="footertekstp"><a class="footertekstp">Osječka 5 b</a></li>
                     <li class="footertekstp"><a class="footertekstp">21000 Split</a></li>
                 </ul>
             </div>
