@@ -1,4 +1,4 @@
- <?php
+<?php
 use PHPMailer\PHPMailer\PHPMailer;
 
 require_once 'phpmailer/Exception.php';
@@ -18,21 +18,21 @@ if(isset($_POST['submit'])){
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'viktor@gmail.com'; // Gmail address which you want to use as SMTP server
-    $mail->Password = 'emailšifra'; // Gmail address Password
+    $mail->Username = ''; // Gmail address which you want to use as SMTP server
+    $mail->Password = ''; // Gmail address Password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = '587';
+    $mail->Port = 587;
 
-    $mail->setFrom('youremail@gmail.com'); // Gmail address which you used as SMTP server
-    $mail->addAddress('youranyemail@gmail.com'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
+    $mail->setFrom(''); // Gmail address which you used as SMTP server
+    $mail->addAddress(''); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
 
     $mail->isHTML(true);
-    $mail->Subject = 'Message Received (Contact Page)';
-    $mail->Body = "<h3>Name : $name <br>Email: $email <br>Message : $message</h3>";
+    $mail->Subject = 'Poruka Zaprimljena(Contact Page)';
+    $mail->Body = "<h3>Ime : $name <br>Email: $email <br>Poruka : $message</h3>";
 
     $mail->send();
     $alert = '<div class="alert-success">
-                 <span>Message Sent! Thank you for contacting us.</span>
+                 <span>Poruka poslana! Hvala Vam na kontaktiranju.</span>
                 </div>';
   } catch (Exception $e){
     $alert = '<div class="alert-error">

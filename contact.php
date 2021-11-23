@@ -19,27 +19,42 @@
     <!--alert messages end-->
     <button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button>
     <header class="kontakt-header">
-        <nav>
-            <a class="logo" href="index.html">
-                <img class="logi" src="assets/images/logo.svg" alt="Logo">
-            </a>
-            <div class="hamburger" onclick="animateIcon()">
-                <div id="nav-icon2">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <div class="main-nav">
+            <nav>
+                <a class="logo" href="index.html">
+                    <img class="logi" src="assets/images/logo.svg" alt="Logo">
+                </a>
+                <div class="hamburger" onclick="animateIcon()">
+                    <div id="nav-icon2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <div class="overlay">
             <ul class="links">
-                <li><a class="active" href="index.html">Naslovnica</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="projekti.html">Projekti</a></li>
-                <li><a href="#">U izgradnji</a></li>
-                <li><a style="color: #b23838;" href="contact.php">Kontaktirajte Nas</a></li>
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__title">Kman</div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <ul class="switch_links">
+                                    <li><a style="color: #b23838;" href="kmanA.html">Zgrada A</a></li>
+                                    <li><a href="kmanB.html">Zgrada B</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li><a href="mertojak.html">Mertojak</a></li>
+                <li><a href="contact.php">Kontaktirajte nas</a></li>
             </ul>
         </div>
     </header>
@@ -63,15 +78,15 @@
             <div class="phone-mail-location">
                 <div class="phone">
                     <h3>Telefon</h3>
-                    <p style="color: white">+ 385 98 323 233</p>
+                    <a href="tel:098-323-233" style="color: white">+ 385 98 323 233</a>
                 </div>
                 <div class="email">
                     <h3>Email</h3>
-                    <p style="color: white">manas@gmail.com</p>
+                    <a href="mailto:manas@gmail.com" style="color: white">manas@gmail.com</a>
                 </div>
                 <div class="location">
                     <h3>Lokacija</h3>
-                    <p style="color: white">Sarajevska 46E, 21000 Split</p>
+                    <a href="https://goo.gl/maps/YGu6cPaXhAhFNRVEA" style="color: white">Sarajevska 46E, 21000 Split</a>
                 </div>
             </div>
         </div>
@@ -114,12 +129,12 @@
             </div>
             <div class="row2">
                 <ul class="ulFooter">
-                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
-                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
-                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
-                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
-                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
-                    <li class="monkey"><a class="monkey" href="#">Naslovnica</a></li>
+                    <li class="monkey"><a class="monkey" href="index.html">Naslovnica</a></li>
+                    <li class="monkey"><a class="monkey" href="projekti.html">Projekti</a></li>
+                    <li class="monkey"><a class="monkey" href="kmanA.html">Kman A</a></li>
+                    <li class="monkey"><a class="monkey" href="kmanB.html">Kman B</a></li>
+                    <li class="monkey"><a class="monkey" href="mertojak.html">Mertojak</a></li>
+                    <li class="monkey"><a class="monkey" href="contact.php">Kontaktirajte nas</a></li>
                 </ul>
             </div>
             <div class="ela">
@@ -127,9 +142,9 @@
             </div>
             <div class="row3">
                 <ul class="ulFooter1">
-                    <li class="mailFooter"><a class="mailFooter" href="#">ante@manas.hr</a></li>
-                    <li class="brojFooter"><a class="brojFooter" href="#">091 1247 421</a></li>
-                    <li class="footertekstp"><a class="footertekstp">Osječka 5 b</a></li>
+                    <li class="mailFooter"><a class="mailFooter" href="mailto:manas@gmail.com">manas@gmail.com</a></li>
+                    <li class="brojFooter"><a class="brojFooter" href="tel:098323233">098 323 233</a></li>
+                    <li class="footertekstp"><a class="footertekstp">Sarajevska 46E</a></li>
                     <li class="footertekstp"><a class="footertekstp">21000 Split</a></li>
                 </ul>
             </div>
@@ -167,21 +182,6 @@
     </section>
     <footer>
     </footer>
-
-    <div class="footer-col">
-
-        <ul>
-            <li><a href="#">Osjecka 5 b</a></li>
-            <li><a href="#">Osjecka 5 b</a></li>
-            <li><a href="#">Osjecka 5 b</a></li>
-            <li><a href="#">Osjecka 5 b</a></li>
-        </ul>
-    </div>
-
-    <script type="text/javascript">
-    </script>
-
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>

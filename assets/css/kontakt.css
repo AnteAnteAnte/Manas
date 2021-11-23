@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Russo One", sans-serif;
-}
-
 header {
     background: #181717;
 }
@@ -18,9 +14,9 @@ header {
 
 section.contact--all-content {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-evenly;
-    height: 80vh;
+    margin: 50px 0;
 }
 h1 {
     display: block;
