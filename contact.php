@@ -1,7 +1,6 @@
-<?php include "sendmail.php"; ?>
+<?php include "sendmail.php"?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -15,7 +14,17 @@
 </head>
 <body>
     <!--alert messages start-->
-    <?php echo $alert; ?>
+    <?php echo $alert;?>
+     <!--alert messages 
+
+    <div class="alert-success">
+      <span>Poruka Poslana! Hvala Vam na kontaktiranju.</span>
+    </div>
+    <div class="alert-error">
+      <span>Nešto je pošlo po krivu! Molimo pokušajte ponovno.</span>
+    </div>
+    -->
+    
     <!--alert messages end-->
     <button onclick="topFunction()" id="mybtn"><i class="fas fa-arrow-up"></i></button>
     <header class="kontakt-header">
@@ -61,9 +70,9 @@
     <section class="contact--all-content">
         <div class="left-contact-form">
             <h1 class="send-contact">Kontaktirajte nas</h1>
-            <form action="sendmail.php" method="post">
+            <form action="" method="post">
                 <input type="text" name="name" value="" placeholder="Ime i Prezime">
-                <input type="email" name="mail" value="" placeholder="Email">
+                <input type="email" name="email" value="" placeholder="Email">
                 <textarea name="message" type="text" placeholder="Poruka" id="textarea" cols="30" rows="10"></textarea>
                 <button type="submit" name="submit">Pošalji</button>
             </form>
@@ -182,6 +191,11 @@
     </section>
     <footer>
     </footer>
+    <script type="text/javascript">
+        if(window.history.replaceState){
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
