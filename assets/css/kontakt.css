@@ -197,7 +197,7 @@ iframe {
 /*css for alert messages*/
 
 .alert-success{
-    z-index: 1;
+    z-index: 1000;
     background: #D4EDDA;
     font-size: 18px;
     padding: 20px 40px;
@@ -210,7 +210,7 @@ iframe {
   }
   
   .alert-error{
-    z-index: 1;
+    z-index: 1000;
     background: #FFF3CD;
     font-size: 18px;
     padding: 20px 40px;
